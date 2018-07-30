@@ -1,0 +1,311 @@
+body{
+    background: #F7F2EF;
+}
+#fullpage{
+    /*background: #F7F2EF;*/
+    /*background: url("../images/4、课程介绍.jpg");*/
+}
+.section img{
+    width:100%;
+    margin: 0 auto;
+}
+.section .screen-main{
+    position: relative;
+    /*width: 1100px;*/
+    /*height: 850px;*/
+    margin: 0 auto;
+    overflow: hidden;
+}
+.section .img{
+    display: inline-block;
+    position: absolute;
+}
+.section1 .img1{
+    width: 395px;
+    height: 39px;
+    background: url(../images/kctj-01-01.png) no-repeat;
+    background-position: 0;
+}
+.section1 .img2{
+    width: 214px;
+    height: 28px;
+    background: url(../images/kctj-01-02.png) no-repeat;
+    background-position: 0;
+}
+.section1 .img3{
+    width: 194px;
+    height: 190px;
+    background: url(../images/kctj-01-03.png) no-repeat;
+    background-position: 0;
+    z-index: 12;
+}
+.section1 .img4{
+    width: 450px;
+    height: 179px;
+    background: url(../images/kctj-01-04.png) no-repeat;
+    background-position: 0;
+    background-size: 84%;
+}
+.section1 .img5{
+    width: 179px;
+    height: 159px;
+    background: url(../images/kctj-01-05.png) no-repeat;
+    background-position: 0;
+}
+.section1 .img6{
+    width: 211px;
+    height: 86px;
+    background: url(../images/kctj-01-06.png) no-repeat;
+    background-position: 0;
+}
+.section1 .img7{
+    width: 1027px;
+    height: 115px;
+    background: url(../images/kctj-01-07.png) no-repeat;
+    background-position: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    background-size: 98%;
+    z-index: 11;
+}
+.section1 .img8{
+    width: 384px;
+    height: 132px;
+    background: url(../images/kctj-01-08.png) no-repeat;
+    background-position: 0;
+    z-index: 12;
+}
+.section1 .img9{
+    width: 274px;
+    height: 96px;
+    background: url(../images/kctj-01-09.png) no-repeat;
+    background-position: 0;
+}
+.section1 .img10{
+    width: 457px;
+    height: 159px;
+    background: url(../images/kctj-01-10.png) no-repeat;
+    background-position: 0;
+}
+.section1 .img11{
+    width: 593px;
+    height: 149px;
+    background: url(../images/kctj-01-12.png) no-repeat;
+    background-position: 0;
+}
+.mainInit {
+    position: relative;
+    /*width: 1027px;*/
+    /*height: 850px;*/
+    margin: 0 auto;
+    background: url(../images/kctj-01-11.png) no-repeat ;
+    overflow: hidden;
+    background-position: 90px;
+    background-size: 928px 454px;
+}
+.guzheng .img0{
+    width: 247px;
+    height: 116px;
+    background: url(../images/kctj-tit-guzheng.png) no-repeat;
+    background-position: 0;
+}
+.guzheng .img1{
+    width: 576px;
+    height: 149px;
+    background: url(../images/kctj-02-01.png) no-repeat;
+    background-position: 0;
+}
+.guzheng .img2{
+    width: 183px;
+    height: 319px;
+    background: url(../images/kctj-02-02.png) no-repeat;
+    background-position: 0;
+}
+.guzheng .img3{
+    width: 193px;
+    height: 40px;
+    background: url(../images/kctj-02-03.png) no-repeat;
+    background-position: 0;
+}
+.guzheng .img4{
+    width: 36px;
+    height: 23px;
+    background: url(../images/kctj-02-04.png) no-repeat;
+    background-position: 0;
+}
+.guzheng .img5{
+    width: 23px;
+    height: 15px;
+    background: url(../images/kctj-02-05.png) no-repeat;
+    background-position: 0;
+}
+.guzheng .img6{
+    width: 180px;
+    height: 198px;
+    background: url(../images/kctj-02-06.png) no-repeat;
+    background-position: 0;
+}
+.guzheng .img7{
+    /*width: 180px;*/
+}
+.guzheng .img8{
+    width: 144px;
+    height: 49px;
+    background: url(../images/kctj-02-08.png) no-repeat;
+    background-position: 0;
+}
+.guzheng .img9{
+    width: 193px;
+    height: 40px;
+    background: url(../images/kctj-02-03.png) no-repeat;
+    background-position: 0;
+}
+
+
+.weiqi .img0{
+    width: 287px;
+    height: 113px;
+    background: url(../images/kctj-tit-weiqi.png) no-repeat;
+    background-position: 0;
+}
+.weiqi .img1{
+    width: 178px;
+    height: 200px;
+    background: url(../images/kctj-03-01.png) no-repeat;
+    background-position: 0;
+}
+.weiqi .img2{
+    width: 156px;
+    height: 298px;
+    background: url(../images/kctj-03-02.png) no-repeat;
+    background-position: 0;
+}
+.weiqi .img3{
+    width: 236px;
+    height: 83px;
+    background: url(../images/kctj-03-03.png) no-repeat;
+    background-position: 0;
+}
+.weiqi .img4{
+    width: 192px;
+    height: 41px;
+    background: url(../images/kctj-03-04.png) no-repeat;
+    background-position: 0;
+}
+.weiqi .img5{
+    width: 105px;
+    height: 43px;
+    background: url(../images/kctj-03-05.png) no-repeat;
+    background-position: 0;
+}
+.weiqi .img6{
+    width: 341px;
+    height: 21px;
+    background: url(../images/kctj-03-06.png) no-repeat;
+    background-position: 0;
+}
+
+
+.shufa .img0{
+    width: 268px;
+    height: 113px;
+    background: url(../images/kctj-tit-shufa.png) no-repeat;
+    background-position: 0;
+}
+.shufa .img1{
+    width: 349px;
+    height: 343px;
+    background: url(../images/kctj-04-01.png) no-repeat;
+    background-position: 0;
+}
+.shufa .img2{
+    width: 178px;
+    height: 199px;
+    background: url(../images/kctj-04-02.png) no-repeat;
+    background-position: 0;
+}
+.shufa .img3{
+    width: 251px;
+    height: 194px;
+    background: url(../images/kctj-04-03.png) no-repeat;
+    background-position: 0;
+}
+
+
+.guohua .img0{
+    width: 264px;
+    height: 113px;
+    background: url(../images/kctj-tit-guohua.png) no-repeat;
+    background-position: 0;
+}
+.guohua .img1{
+    width: 305px;
+    height: 225px;
+    background: url(../images/kctj-05-01.png) no-repeat;
+    background-position: 0;
+}
+.guohua .img2{
+    width: 110px;
+    height: 38px;
+    background: url(../images/kctj-05-02.png) no-repeat;
+    background-position: 0;
+}
+.guohua .img3{
+    width: 219px;
+    height: 146px;
+    background: url(../images/kctj-05-03.png) no-repeat;
+    background-position: 0;
+}
+.guohua .img4{
+    width: 601px;
+    height: 334px;
+    background: url(../images/kctj-05-04.png) no-repeat;
+    background-position: 0;
+}
+
+
+.guoxue .img0{
+    width: 112px;
+    height: 239px;
+    background: url(../images/kctj-tit-guoxue.png) no-repeat;
+    background-position: 0;
+}
+.guoxue .img1{
+    width: 179px;
+    height: 167px;
+    background: url(../images/kctj-06-01.png) no-repeat;
+    background-position: 0;
+}
+
+
+.chayi .img0{
+    width: 236px;
+    height: 113px;
+    background: url(../images/kctj-tit-chayi.png) no-repeat;
+    background-position: 0;
+}
+
+.chayi .img1{
+    width: 150px;
+    height: 109px;
+    background: url(../images/kctj-07-01.png) no-repeat;
+    background-position: 0;
+}
+.chayi .img2{
+    width: 258px;
+    height: 198px;
+    background: url(../images/kctj-07-02.png) no-repeat;
+    background-position: 0;
+}
+.chayi .img3{
+    width: 659px;
+    height: 224px;
+    background: url(../images/kctj-07-03.png) no-repeat;
+    background-position: 0;
+}
+.chayi .img4{
+    width: 75px;
+    height: 104px;
+    background: url(../images/kctj-07-04.png) no-repeat;
+    background-position: 0;
+}

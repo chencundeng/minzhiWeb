@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>明志活动</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/welcome.css">
+    <script src="js/jquery-2.2.0.min.js"></script>
+    <script src="js/jquery.mChange.zoom.js"></script>
+    <script src="js/jquery.transit.min.js"></script>
+    <style>
+        .sroll{
+            position: relative;
+            top: 75px;
+        }
+        .sroll .focus {
+            margin-bottom: 26px;
+        }
+        .sroll .focus {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+        }
+        .sroll .focus li {
+            float: left;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+        .sroll .focus li a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .sroll .focus .prev {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100px;
+            height: 100%;
+            z-index: 10;
+        }
+        .sroll .focus .prev a {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            margin-top: -40px;
+            width: 80px;
+            height: 80px;
+            background: url(images/indexScroll-prev.png) no-repeat center;
+        }
+        .sroll .focus .next {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 100px;
+            height: 100%;
+            z-index: 10;
+        }
+        .sroll .focus .next a {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -40px;
+            width: 80px;
+            height: 80px;
+            background: url(images/indexScroll-next.png) no-repeat center;
+        }
+
+
+        .fourth{ width: 100%;
+
+            background-color: #8C8077;}
+
+        .four {
+            width: 400px;
+
+            padding-top: 2%;
+            padding-bottom: 2%;
+
+            text-align: center;
+            font-size: 13px;
+            line-height: 20px;
+            margin-left: 30%;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+<nav class="navBanner">
+    <section class="navBanner-main">
+        <a class="logo" href="index.html"></a>
+        <ul class="navList">
+            <li>
+                <a href="index.html">
+                    <b class="b1"></b>
+                    <b class="b2"></b>
+                </a>
+            </li>
+            <li>
+                <a href="academyIntroduced.html">
+                    <b class="b1"></b>
+                    <b class="b2"></b>
+                </a>
+            </li>
+            <li>
+                <a href="teachRecommend.html">
+                    <b class="b1"></b>
+                    <b class="b2"></b>
+                </a>
+            </li>
+            <li>
+                <a href="courseIntroduction.html">
+                    <b class="b1"></b>
+                    <b class="b2"></b>
+                </a>
+            </li>
+            <li class="active">
+                <a href="mingzhiActivity.html">
+                    <b class="b1"></b>
+                    <b class="b2"></b>
+                </a>
+            </li>
+            <li>
+                <a href="mingzhiStudents.html">
+                    <b class="b1"></b>
+                    <b class="b2"></b>
+                </a>
+            </li>
+            <li>
+                <a href="contactUs.html">
+                    <b class="b1"></b>
+                    <b class="b2"></b>
+                </a>
+            </li>
+            <li>
+                <a href="recruiting.html">
+                    <b class="b1"></b>
+                    <b class="b2"></b>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+</nav>
+<section class="sroll">
+    <div class="focus" style="height: 486px;">
+        <div>
+            <a id="wrap-banner" href="javascript:void(0);"></a>
+            <ul>
+                <li class="s" style="transform: scale(1, 1); opacity: 1; z-index: 0; transition: opacity 800ms cubic-bezier(0, 1, 1, 1) 0s, transform 800ms cubic-bezier(0, 1, 1, 1) 0s, z-index 800ms cubic-bezier(0, 1, 1, 1) 0s;">
+                    <a href="javascript:void(0);" data-href="javascript:void(0);" style="background:url(images/active01.png) no-repeat center;background-size:80%; "></a>
+                </li>
+                <li style="transform: scale(1, 1); opacity: 0; z-index: -1;" class="">
+                    <a href="javascript:void(0);" data-href="auditions.html" style="background:url(images/indexScroll02.jpg) no-repeat center;background-size:auto 100%;"></a>
+                </li>
+                <li style="transform: scale(1.5, 1.5); opacity: 0; z-index: 0; transition: opacity 1000ms cubic-bezier(0.5, 0, 0.2, 1) 0s, transform 1000ms cubic-bezier(0.5, 0, 0.2, 1) 0s;" class="">
+                    <a href="javascript:void(0);" data-href="http://www.dpm.org.cn/collection/embroider/246078.html" style="background:url(images/indexScroll03.jpg) no-repeat center;background-size:80%;"></a>
+                </li>
+            </ul>
+            <div class="nav">
+                <i class="now"></i><i class=""></i><i class=""></i></div>
+            <script>
+                $('.focus .widget-area-edit,.focus .widget-area-notice').css({"top":"91px"});
+                $('.home .focus ul a').click(function(){
+                    var flag = false;
+                    $('.home .focus ul li').each(function(i, e){
+                        if( $(e).hasClass('s')) {
+                            var link = $(e).find('a').attr('data-href');
+                            dplus.track("焦点图",{"名称":"首页焦点图", "链接地址":link});
+                            if ( link != "" && link != "javascript:;" && link != "javascript:void(0);" ) {
+                                //$(e).find('a').attr('href', link).attr('target', '_blank').trigger('click');
+                                //window.open(link);
+                                $('.home .focus ul a').attr('href', link).attr('target', '_blank');
+                                flag = true;
+                            }
+                            else {
+                                $('.home .focus ul a').attr('href', 'javascript:void(0);').attr('target', '_self');
+                            }
+                        }
+                    })
+
+                    return flag;
+                });
+            </script>
+        </div>
+        <div class="prev"><a href="javascript:;"></a></div>
+        <div class="next"><a href="javascript:;"></a></div>
+    </div>
+</section>
+<section class="activityList">
+    <section class="activityList-main">
+        <section class="main-left">
+            <ul>
+                <li><a href="http://mp.weixin.qq.com/s?__biz=MzUxNDAzNzE2OQ==&mid=100000517&idx=1&sn=d8ea161a1e7f540d6296b88a4361f9d4&chksm=794d47db4e3acecdf5484020e23cba78a76c763c37e9e3fc3d052147f634dcdb886985a14129#rd"><b></b>【活动】九月十六，皮影含情<time>2018年10月11号</time></a></li>
+                <li><a href="http://mp.weixin.qq.com/s?__biz=MzUxNDAzNzE2OQ==&mid=100001028&idx=1&sn=9aba1f41c12e047b01263dc58b13a7d8&chksm=794d41da4e3ac8cc475feef449c6efd85484d511212237ece7eb7303b9154a39a1c016c17f77#rd"><b></b> 明志活动  《哆唻A梦》暖心陪你过六一！<time>2018年10月11号</time></a></li>
+                <li><a href="https://mp.weixin.qq.com/s?__biz=MzUxNDAzNzE2OQ==&tempkey=OTY1X2pOSmlOdzY0M2hibU9wZTRwRmxiMnZ3SXdPMVBGWEw3czYzSzNwUmJBWTlFMUQ0SmRVMEpJckVlWmg2eGhWQmpJLUtISmZvczNiTS13OGcxVzBWbE50bVJwSUU0RHJXdE5rYmZMY0hvbG8yVEtZNmk4Mm95S2xaMVpwV2lsb2V1alNGNVlHQTROdjZVWUNvSVBkVS1GVTVybzMxY2FNN0FmZHFpc0F%2Bfg%3D%3D&chksm=794d45324e3acc24cd97462991fe64160cf966e143793eabe02c55162e7cdae87aaf4cc96d55#rd"><b></b>明志书院“庆端午”趣味主题活动圆满结束！<time>2018年10月11号</time></a></li>
+                <li><a href="http://mp.weixin.qq.com/s?__biz=MzUxNDAzNzE2OQ==&mid=100000601&idx=1&sn=4892327eaa59c02887eb17a7daa461a8&chksm=794d47874e3ace911cb3cbaa56d3264e22bf43270efb951e789b92cf2356fd031430a4624e2c#rd"><b></b>活动篇  公益课堂国学礼 <time>2018年10月11号</time></a></li>
+                <li><a href="http://mp.weixin.qq.com/s?__biz=MzUxNDAzNzE2OQ==&mid=100000581&idx=2&sn=4fb1800b908aefab95685b5dd798824e&chksm=794d479b4e3ace8d6b3b3f794beeb27fbfd52bcdbc5829d2c4d5e0f66c89f068f9b441db48db#rd"><b></b>明志活动  “国学礼仪课堂”圆满结束<time>2018年10月11号</time></a></li>
+
+            </ul>
+        </section>
+    </section>
+</section>
+<div class="fourth ">
+    <div class="four">
+        <span><strong>钱江学堂</strong></span><br/>
+        <span>0571-85186096</span><br/>
+        <span>杭州市上城区中豪·望江国际1号楼3楼</span><br/><br/>
+        <span><strong>西溪学堂</strong></span><br/>
+        <span>0571-87248006</span><br/>
+        <span>杭州市西湖区西溪银泰3号楼北楼113-114</span><br/><br/>
+        <span>COPYRIGHT?2018 杭州日新教育咨询有限公司.ALL RIGHTS RESERVED</span><br/>
+        <span>浙ICP备0000008号-1 网站设计与建设：杭州敬惜设计</span>
+    </div>
+</div>
+
+</body>
+<script>
+    $('.focus').height($(window).height())
+    $('.focus li').mChange({
+        auto: 1, //是否自动播放,1为自动,0为手动
+        arrow: 1, //是否反转箭头,1为点击左侧向右滚动,0则相反
+        speed: 1000, //效果速度,大于0.3
+        time: 5000, //周期时间，大于1
+        nav: $('.focus .nav i'), //导航
+        nave: "click", //导航事件
+        navs: 0, //导航滚动
+        prev: ".focus .prev a", //上一个
+        next: ".focus .next a", //下一个
+        cycle: 1, //是否循环
+        mousestop: 0, //是否鼠标划入停止
+        mousewheel: 0, //是否开启滚轮事件
+        animates: function(idx) {} //自定义函数
+    });
+</script>
+
+</html>

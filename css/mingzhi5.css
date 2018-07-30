@@ -1,0 +1,99 @@
+h4{
+    border-bottom: 2px solid #E0D1BE;
+    padding-bottom:3px;
+    width: 90px;/*.....框线条长度...*/
+    color: #E0D1BE;
+    font-size: 20px;
+    margin-top: 10px;
+
+
+}
+h6{
+
+    margin-bottom: 15px;
+    margin-top: 10px;
+    font-size: 15px;
+
+
+
+}
+a {
+    text-decoration: none;
+    color: #000000;
+
+}
+
+a:hover
+{
+    color:#E0D1BE;
+}
+
+
+.clear:after {content:"."; display:block; height:0; visibility:hidden; clear:both; }
+.clear { *zoom:1; }　
+
+ .frist {
+                       background-size: 100%;
+                       background-repeat: no-repeat;
+                   }
+
+img{
+    float: left;
+}
+
+.second{
+
+    width: 100%;
+    background-color: #ffffff;
+
+
+
+}
+.two{
+    border: #E0D1BE 1px solid;
+    width: 60%;
+    height: 100%;
+    background-color: #E0D1BE;
+    margin: 0 20%;
+}
+
+.two1{
+    border: #8C8077 1px solid;
+    border-radius: 10px;
+    width: 80%;
+    height: 20%;
+    background-color: #ffffff;
+    margin-top:5% ;
+    margin-left: 10%;
+    padding-left: 15px;
+
+}
+.two2{
+    border: #8C8077 1px solid;
+    border-radius: 10px;
+    background-color: #ffffff;
+    width: 80%;
+    height: 10%;
+    margin-top: 4%;
+    margin-left: 10%;
+
+    padding-left: 15px;
+}
+ .two2margin{
+     margin-bottom: 15%;
+ }
+
+
+.fourth{
+    width: 100%;
+    border: #8C8077 1px solid;
+    background-color: #8C8077;
+}
+.fourth{
+    text-align: center;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 1.5em;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}

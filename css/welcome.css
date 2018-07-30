@@ -1,0 +1,786 @@
+body.welcomePage
+{
+    background: #8C8077;
+}
+.teachRecommendDetail{
+    background: #E0D1BE;
+;
+}
+.welcomePage img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+
+/*indexPage start*/
+    /* nav start */
+.navBanner{
+    width: 100%;
+    height: 75px;
+    background: rgba(220,220,220,0.7);
+    position: absolute;
+    top: 0;
+    z-index: 11;
+}
+.navBanner .navBanner-main{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.navBanner .navBanner-main .logo{
+    width: 300px;
+    display: inline-block;
+    height: 100%;
+    background: url(../images/icon.png) no-repeat;
+    background-position: 0 -166px;
+    background-size: 391%;
+}
+.navBanner .navBanner-main .navList{
+    float: right;
+}
+.navBanner .navBanner-main .navList li{
+    width: 55px;
+    height: 75px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+.navBanner .navBanner-main .navList li b{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.navBanner .navBanner-main .navList li .b1{
+    position: absolute;
+    top:0;
+    left: 0;
+    background: url(../images/icon.png) no-repeat;
+    background-size: 1500%;
+    animation:moveLeft .5s;
+    -webkit-animation:moveLeft .5s;
+}
+@keyframes moveLeft {
+    0%{
+        position: absolute;
+        top: 0;
+        left: -55px;
+    }
+    100% {
+        position: absolute;
+        top: 0;
+        left: 0px;
+    }
+}
+@-moz-keyframes moveLeft /* Firefox */
+{
+    0%{
+        position: absolute;
+        top: 0;
+        left: -55px;
+    }
+    100% {
+        position: absolute;
+        top: 0;
+        left: 0px;
+    }
+}
+
+@-webkit-keyframes moveLeft /* Safari 和 Chrome */
+{
+    0%{
+        position: absolute;
+        top: 0;
+        left: -55px;
+    }
+    100% {
+        position: absolute;
+        top: 0;
+        left: 0px;
+    }
+}
+
+@-o-keyframes moveLeft /* Opera */
+{
+    0%{
+        position: absolute;
+        top: 0;
+        left: -55px;
+    }
+    100% {
+        position: absolute;
+        top: 0;
+        left: 0px;
+    }
+}
+.navBanner .navBanner-main .navList li .b2{
+    position: absolute;
+    top: 0;
+    left: 55px;
+    background: url(../images/icon.png) no-repeat;
+    background-size: 2000%;
+    animation:moveLeft2 .5s;
+    -webkit-animation:moveLeft2 .5s;
+}
+@keyframes moveLeft2 {
+    0%{
+        position: absolute;
+        top: 0;
+        left: 0px;
+    }
+    100% {
+        position: absolute;
+        top: 0;
+        left: 55px;
+    }
+}
+@-moz-keyframes moveLeft2 /* Firefox */
+{
+    0%{
+        position: absolute;
+        top: 0;
+        left: 0px;
+    }
+    100% {
+        position: absolute;
+        top: 0;
+        left: 55px;
+    }
+}
+
+@-webkit-keyframes moveLeft2 /* Safari 和 Chrome */
+{
+    0%{
+        position: absolute;
+        top: 0;
+        left: 0px;
+    }
+    100% {
+        position: absolute;
+        top: 0;
+        left: 55px;
+    }
+}
+
+@-o-keyframes moveLeft2 /* Opera */
+{
+    0%{
+        position: absolute;
+        top: 0;
+        left: 0px;
+    }
+    100% {
+        position: absolute;
+        top: 0;
+        left: 55px;
+    }
+}
+.navBanner .navBanner-main .navList li.active .b1,
+.navBanner .navBanner-main .navList li:hover .b1{
+    position: absolute;
+    top:0;
+    left: -55px;
+    animation:mymove .5s;
+    -webkit-animation:mymove .5s;
+}
+@keyframes mymove {
+    0%{
+        position: absolute;
+        top:0;
+        left:0;
+    }
+    100%{
+        position: absolute;
+        top:0;
+        left: -55px;
+    }
+}
+@-moz-keyframes mymove /* Firefox */
+{
+    0%{
+        position: absolute;
+        top:0;
+        left:0;
+    }
+    100%{
+        position: absolute;
+        top:0;
+        left: -55px;
+    }
+}
+
+@-webkit-keyframes mymove /* Safari 和 Chrome */
+{
+    0%{
+        position: absolute;
+        top:0;
+        left:0;
+    }
+    100%{
+        position: absolute;
+        top:0;
+        left: -55px;
+    }
+}
+
+@-o-keyframes mymove /* Opera */
+{
+    0%{
+        position: absolute;
+        top:0;
+        left:0;
+    }
+    100%{
+        position: absolute;
+        top:0;
+        left: -55px;
+    }
+}
+.navBanner .navBanner-main .navList li.active .b2,
+.navBanner .navBanner-main .navList li:hover .b2{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    animation:moveRight 1s;
+    -webkit-animation:moveRight 1s;
+}
+@keyframes moveRight {
+    0%{
+        position: absolute;
+        top: 0;
+        left: 55px;
+    }
+    100% {
+        position: absolute;
+        top: 0;
+        left: 0px;
+    }
+}
+@-moz-keyframes moveRight /* Firefox */
+{
+    0%{
+        position: absolute;
+        top: 0;
+        left: 55px;
+    }
+    100% {
+        position: absolute;
+        top: 0;
+        left: 0px;
+    }
+}
+
+@-webkit-keyframes moveRight /* Safari 和 Chrome */
+{
+    0%{
+        position: absolute;
+        top: 0;
+        left: 55px;
+    }
+    100% {
+        position: absolute;
+        top: 0;
+        left: 0px;
+    }
+}
+
+@-o-keyframes moveRight /* Opera */
+{
+    0%{
+        position: absolute;
+        top: 0;
+        left: 55px;
+    }
+    100% {
+        position: absolute;
+        top: 0;
+        left: 0px;
+    }
+}
+.navBanner .navBanner-main .navList li:nth-child(1) .b1{
+    background-position: -364px -105px;
+}
+.navBanner .navBanner-main .navList li:nth-child(2) .b1{
+    background-position: -420px -105px;
+}
+.navBanner .navBanner-main .navList li:nth-child(3) .b1{
+    background-position: -476px  -105px;
+}
+.navBanner .navBanner-main .navList li:nth-child(4) .b1{
+    background-position: -532px -105px;
+}
+.navBanner .navBanner-main .navList li:nth-child(5) .b1{
+    background-position: -588px -105px;
+}
+.navBanner .navBanner-main .navList li:nth-child(6) .b1{
+    background-position: -644px -105px;
+}
+.navBanner .navBanner-main .navList li:nth-child(7) .b1{
+    background-position: -700px -105px;
+}
+.navBanner .navBanner-main .navList li:nth-child(8) .b1{
+    background-position: -756px -105px;
+}
+.navBanner .navBanner-main .navList li:nth-child(1) .b2{
+    background-position: -493px -289px;
+}
+.navBanner .navBanner-main .navList li:nth-child(2) .b2{
+    background-position: -569px -289px
+}
+.navBanner .navBanner-main .navList li:nth-child(3) .b2{
+    background-position: -645px -289px;
+}
+.navBanner .navBanner-main .navList li:nth-child(4) .b2{
+    background-position: -721px -289px;
+}
+.navBanner .navBanner-main .navList li:nth-child(5) .b2{
+    background-position: -797px -289px;
+}
+.navBanner .navBanner-main .navList li:nth-child(6) .b2{
+    background-position: -873px -289px;
+}
+.navBanner .navBanner-main .navList li:nth-child(7) .b2{
+    background-position: -949px -289px;
+}
+.navBanner .navBanner-main .navList li:nth-child(8) .b2{
+    background-position: -1025px -289px;
+}
+    /* nav end */
+
+.floor1-inner,
+.floor2-inner{
+    width: 1200px;
+    height: 300px;
+    margin:0 auto;
+    margin-top: 10px;
+}
+.floor1-inner .floor1-l{
+    display: inline-block;
+    width: 34%;
+    float: left;
+}
+.floor2-inner .floor2-l,
+.floor2-inner .floor2-r{
+    width: 50%;
+    box-sizing: border-box;
+}
+.floor2-inner .floor2-l{n
+    padding-right:10px;
+    float: left;
+}
+.floor2-inner .floor2-r {
+    paddig-left: 10px;
+    float: right;
+    height: 100%;
+    padding-left: 90px;
+    background: url(../images/indexActiveTit.png) no-repeat  #8A8077;
+    background-size: 49px;
+    background-position: 24px 18px;
+}
+.floor2-inner .floor2-r .main-left{
+    padding: 30px 30px 30px 0;
+}
+.floor2-inner .floor2-r .main-left li{
+    line-height: 35px;
+
+
+}
+.floor2-inner .floor2-r .main-left li a{
+    display: block;
+    color: #fff;
+}
+.floor2-inner .floor2-r .main-left li a b{
+    display: inline-block;
+    float: left;
+    width:20px;
+    height: 35px;
+    background: url("../images/indexActionIcon.png") no-repeat;
+    background-position: center;
+    margin-right: 10px;
+}
+.floor2-inner .floor2-r .main-left li time{
+    float: right;
+}
+
+.frouth{
+    background-color: #8c8077;
+    margin-top: 5%;
+
+}
+.frou{
+
+    width:400px;
+    padding-top:2%;
+    text-align:center;
+    font-family: 微软雅黑;
+    font-size: 12px;
+    line-height: 20px;
+    margin-left: 40%;
+    color: #FFFFFF;
+
+}
+
+
+/*indexPage end*/
+
+
+
+/*teachRecommendDetail start*/
+.teachRecommendDetail-main,
+.courseDetail-main,
+.recruiting-main{
+    width: 1100px;
+    margin:0 auto;
+}
+.teacher-info,
+.course-info,
+.recruiting-info{
+    margin-left:150px;
+}
+.teachRecommendDetail-main .teacherImg{
+    width: 30%;
+}
+.teacherTab,
+.courseTab,
+.recruitingTab{
+    display: inline-block;
+    width:145px;
+    position: fixed;
+    top: 0;
+}
+.teacherTab h5,
+.teacherTab li,
+.courseTab h5,
+.courseTab li,
+.recruitingTab h5,
+.recruitingTab li{
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background: #B18E6F;
+    margin-top: 1px;
+    color: #fff;
+}
+.teacherTab h5,
+.courseTab h5,
+.recruitingTab h5{
+    background:#988678;
+}
+/*teachRecommendDetail end*/
+
+
+
+
+/*contactUs start*/
+.contactUs-main{
+    width: 1100px;
+    margin: 0 auto;
+}
+.contactUs-main .top{
+    position: relative;
+    top: 75px;
+    height: 400px;
+}
+.contactUs-main .top .img{
+    position: absolute;
+}
+.contactUs-main .top .img1{
+    top: 61px;
+    right: 245px;
+    animation:img1 1s;
+    -webkit-animation:img1 1s;
+}
+@keyframes img1 {
+    0%{
+        top: 61px;
+        right: -500px;
+    }
+    100% {
+        top: 61px;
+        right: 245px;
+    }
+}
+@-moz-keyframes img1 /* Firefox */
+{
+    0%{
+        top: 61px;
+        right: -500px;
+    }
+    100% {
+        top: 61px;
+        right: 245px;
+    }
+}
+
+@-webkit-keyframes img1 /* Safari 和 Chrome */
+{
+    0%{
+        top: 61px;
+        right: -500px;
+    }
+    100% {
+        top: 61px;
+        right: 245px;
+    }
+}
+
+@-o-keyframes img1 /* Opera */
+{
+    0%{
+        top: 61px;
+        right: -500px;
+    }
+    100% {
+        top: 61px;
+        right: 245px;
+    }
+}
+.contactUs-main .top .img2{
+    top: 62px;
+    left: 145px;
+    animation:img2 1s;
+    -webkit-animation:img2 1s;
+}
+@keyframes img2 {
+    0%{
+        top: 61px;
+        left: -500px;
+    }
+    100% {
+        top: 62px;
+        left: 145px;
+    }
+}
+@-moz-keyframes img2 /* Firefox */
+{
+    0%{
+        top: 61px;
+        left: -500px;
+    }
+    100% {
+        top: 62px;
+        left: 145px;
+    }
+}
+
+@-webkit-keyframes img2 /* Safari 和 Chrome */
+{
+    0%{
+        top: 61px;
+        left: -500px;
+    }
+    100% {
+        top: 62px;
+        left: 145px;
+    }
+}
+
+@-o-keyframes img2/* Opera */
+{
+    0%{
+        top: 61px;
+        left: -500px;
+    }
+    100% {
+        top: 62px;
+        left: 145px;
+    }
+}
+
+.contactUs-main .top .img3{
+    top: 51px;
+    left: 468px;
+    animation:img3 1s;
+    -webkit-animation:img3 1s;
+}
+.contactUs-main .top .img4{
+    top: 200px;
+    right: 342px;
+    animation:img4 1.5s;
+    -webkit-animation:img4 1.5s;
+}
+@keyframes img4 {
+    0%{
+        top: 200px;
+        right: -300px;
+    }
+    100% {
+        top: 200px;
+        right: 342px;
+    }
+}
+@-moz-keyframes img4/* Firefox */
+{
+    0%{
+        top: 200px;
+        right: -300px;
+    }
+    100% {
+        top: 200px;
+        right: 342px;
+    }
+}
+
+@-webkit-keyframes img4 /* Safari 和 Chrome */
+{
+    0%{
+        top: 200px;
+        right: -300px;
+    }
+    100% {
+        top: 200px;
+        right: 342px;
+    }
+}
+
+@-o-keyframes img4/* Opera */
+{
+    0%{
+        top: 200px;
+        right: -300px;
+    }
+    100% {
+        top: 200px;
+        right: 342px;
+    }
+}
+
+.contactUs-main .top .img5{
+    top: 237px;
+    right: 200px;
+    animation:img5 1.5s;
+    -webkit-animation:img5 1.5s;
+}
+@keyframes img5 {
+    0%{
+        top: 237px;
+        right: -300px;
+    }
+    100% {
+        top: 237px;
+        right: 200px;
+    }
+}
+@-moz-keyframes img5/* Firefox */
+{
+    0%{
+        top: 237px;
+        right: -300px;
+    }
+    100% {
+        top: 237px;
+        right: 200px;
+    }
+}
+
+@-webkit-keyframes img5 /* Safari 和 Chrome */
+{
+    0%{
+        top: 237px;
+        right: -300px;
+    }
+    100% {
+        top: 237px;
+        right: 200px;
+    }
+}
+
+@-o-keyframes img5/* Opera */
+{
+    0%{
+        top: 237px;
+        right: -300px;
+    }
+    100% {
+        top: 237px;
+        right: 200px;
+    }
+}
+
+.contactUs-main .bottom{
+    height: 430px;
+}
+.contactUs-main .bottom .btm-left{
+    display: inline-block;
+    width: 50%;
+    height: 476px;
+    float: left;
+    background: url(../images/map1.png) no-repeat;
+    background-size: 85%;
+    position: relative;
+}
+.contactUs-main .bottom .btm-left .address{
+    position: absolute;
+    top: 20%;
+}
+.contactUs-main .bottom .btm-left .hover{
+    position: absolute;
+    top: 42%;
+    width: 40px;
+    left: 24%;
+}
+.contactUs-main .bottom .btm-right{
+    display: inline-block;
+    width: 50%;
+    height: 476px;
+    float: right;
+    background: url("../images/map2.png") no-repeat;
+    background-size: 85%;
+    background-position: 96px 40px;
+    position: relative;
+}
+.contactUs-main .bottom .btm-right .address{
+    top: 43%;
+    position: absolute;
+    left: 32%;
+}
+.contactUs-main .bottom .btm-right .hover{
+    position: absolute;
+    top: 31%;
+    width: 40px;
+    left: 37%;
+}
+
+/*contactUs end*/
+
+
+/*activity start*/
+.activityList-main{
+    width: 1100px;
+    min-height: 200px;
+    margin: 0 auto;
+    margin-top: 77px;
+    box-sizing: border-box;
+    padding-left: 90px;
+    background: url(../images/mingzhiActivity.png) no-repeat #e0d1be;
+    background-size: 30px;
+    background-position: 30px 30px;
+}
+
+.activityList-main .main-left{
+    padding: 30px 30px 30px 0;
+}
+.activityList-main .main-left li,{
+    line-height: 35px;
+}
+.activityList-main .main-left li a{
+    display: block;
+}
+.activityList-main .main-left li a b{
+    display: inline-block;
+    float: left;
+    width:20px;
+    height: 35px;
+    background: url("../images/activeListIcon.png") no-repeat;
+    background-position: center;
+    margin-right: 10px;
+}
+.activityList-main .main-left li time{
+    float: right;
+}
+/*activity end*/

@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<link rel="stylesheet" href="css/reset.css">-->
+    <title>书院介绍</title>
+    <link rel="stylesheet" href="css/welcome.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .sztjPage{
+            background-color: #E0D1BE;
+            width: 100%;
+
+        }
+        li {
+            list-style-type: none;
+            display: list-item;
+        }
+        .clearfix:after{
+            content:'';display:block;clear:both;height:0;overflow:hidden;visibility:hidden;
+        }
+        .clearfix{
+            zoom:1;
+        }
+
+        .big{
+            width: 90%;
+            margin: 0 auto;
+
+        }
+        .wen{
+            font-size: 12px;
+        }
+
+        .frist{
+
+            width: 100%;
+            position: relative;
+
+
+        }
+        .fristleft{
+
+            display: inline-block;
+            float: left;
+            border: #E0D1BE 1px solid;
+            width: 35%;
+            position: absolute;
+            left: 5%;
+            top: 30%;
+            color: #000000;
+            line-height: 25px;
+
+
+        }
+
+        .text{
+            font-size: 30px;
+
+        }
+        .wen2{
+            font-size: 20px;
+        }
+
+
+
+        .fristright{
+            display: inline-block;
+            float: right;
+            width: 55%;
+
+        }
+        .two{
+
+            width: 100%;
+            position: relative;
+
+
+
+        }
+        .twoleft{
+            display: inline-block;
+            float: left;
+            width: 55%;
+        }
+
+        .tworight{
+            display: inline-block;
+            float: right;
+            border: #E0D1BE 1px solid;
+            width: 35%;
+            position: absolute;
+            right: 5%;
+            top: 30%;
+            line-height: 25px;
+
+        }
+        .three{
+
+            width: 100%;
+            position: relative;
+
+
+        }
+        .threeleft{
+            display: inline-block;
+            float: left;
+            border: #E0D1BE 1px solid;
+            width: 40%;
+            position: absolute;
+            left: 5%;
+            top: 30%;
+            line-height: 25px;
+
+        }
+        .threeright{
+            display: inline-block;
+            float: right;
+            width: 55%;
+        }
+        .four{
+
+            width: 100%;
+            position: relative;
+
+
+        }
+
+        .fourleft{
+            display: inline-block;
+            float: left;
+            width: 55%;
+
+        }
+        .fouright{
+            display: inline-block;
+            float: right;
+            border: #E0D1BE 1px solid;
+            width: 35%;
+            position: absolute;
+            right: 5%;
+            top: 30%;
+            line-height: 25px;
+
+
+        }
+        .five{
+
+            width: 100%;
+            position: relative;
+
+
+        }
+        .fiveleft{
+            display: inline-block;
+            float: left;
+            border: #E0D1BE 1px solid;
+            width: 35%;
+            position: absolute;
+            left: 5%;
+            top: 30%;
+            line-height: 25px;
+
+
+        }
+        .fiveright{
+            display: inline-block;
+            float: right;
+            width: 55%;
+        }
+        .six{
+
+            width: 100%;
+            position: relative;
+
+
+
+        }
+        .sixleft{
+            display: inline-block;
+            float: left;
+            width: 55%;
+        }
+        .sixright{
+            display: inline-block;
+            float: right;
+            border: #E0D1BE 1px solid;
+            width: 35%;
+            position: absolute;
+            right: 5%;
+            top: 30%;
+            line-height: 25px;
+
+        }
+
+
+        .seven1 {
+            display: inline-block;
+            position: relative;
+            width: 30%;
+            margin: 0 auto;
+            float: left;
+
+        }
+        img{
+            width: 100%;
+        }
+        .bmbox {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(101, 101, 101, 0.6);
+            color: #ffffff;
+            opacity: 0;
+            text-align:center;
+            padding-top: 30%;
+            box-sizing: border-box;
+            line-height:35px;
+
+        }
+
+
+        .bmbox span {
+            text-align: center;
+        }
+        .seven1 a:hover .bmbox {
+            opacity: 1;
+        }
+        span{
+            font-size: 25px;
+
+        }
+        .p1{
+            font-size: 15px;
+        }
+        .lest{
+            font-size: 10px;
+
+        }
+        .eight{
+
+            background-color: #8C8077;
+
+
+        }
+
+
+        .eight{
+            text-align: center;
+            color: #ffffff;
+            font-size: 13px;
+            line-height: 1.5em;
+            padding-top: 2%;
+
+        }
+
+        @-webkit-keyframes bounceInLeft {
+            0%, 100%, 60%, 75%, 90% {
+                -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+                transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
+            }
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(-3000px, 0, 0);
+                transform: translate3d(-3000px, 0, 0)
+            }
+            60% {
+                opacity: 1;
+                -webkit-transform: translate3d(25px, 0, 0);
+                transform: translate3d(25px, 0, 0)
+            }
+            75% {
+                -webkit-transform: translate3d(-10px, 0, 0);
+                transform: translate3d(-10px, 0, 0)
+            }
+            90% {
+                -webkit-transform: translate3d(5px, 0, 0);
+                transform: translate3d(5px, 0, 0)
+            }
+            100% {
+                -webkit-transform: none;
+                transform: none
+            }
+        }
+
+        @keyframes bounceInLeft {
+            0%, 100%, 60%, 75%, 90% {
+                -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+                transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
+            }
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(-3000px, 0, 0);
+                -ms-transform: translate3d(-3000px, 0, 0);
+                transform: translate3d(-3000px, 0, 0)
+            }
+            60% {
+                opacity: 1;
+                -webkit-transform: translate3d(25px, 0, 0);
+                -ms-transform: translate3d(25px, 0, 0);
+                transform: translate3d(25px, 0, 0)
+            }
+            75% {
+                -webkit-transform: translate3d(-10px, 0, 0);
+                -ms-transform: translate3d(-10px, 0, 0);
+                transform: translate3d(-10px, 0, 0)
+            }
+            90% {
+                -webkit-transform: translate3d(5px, 0, 0);
+                -ms-transform: translate3d(5px, 0, 0);
+                transform: translate3d(5px, 0, 0)
+            }
+            100% {
+                -webkit-transform: none;
+                -ms-transform: none;
+                transform: none
+            }
+        }
+
+        .bounceInLeft {
+            -webkit-animation-name: bounceInLeft;
+            animation-name: bounceInLeft
+        }
+        .animated {
+            -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both
+        }
+        .animated.infinite {
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite
+        }
+
+        .animated.hinge {
+            -webkit-animation-duration: 20s;
+            animation-duration: 20s
+        }
+
+        @-webkit-keyframes bounceInRight {
+            0%, 100%, 60%, 75%, 90% {
+                -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+                transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
+            }
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(3000px, 0, 0);
+                transform: translate3d(3000px, 0, 0)
+            }
+            60% {
+                opacity: 1;
+                -webkit-transform: translate3d(-25px, 0, 0);
+                transform: translate3d(-25px, 0, 0)
+            }
+            75% {
+                -webkit-transform: translate3d(10px, 0, 0);
+                transform: translate3d(10px, 0, 0)
+            }
+            90% {
+                -webkit-transform: translate3d(-5px, 0, 0);
+                transform: translate3d(-5px, 0, 0)
+            }
+            100% {
+                -webkit-transform: none;
+                transform: none
+            }
+        }
+
+        @keyframes bounceInRight {
+            0%, 100%, 60%, 75%, 90% {
+                -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+                transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
+            }
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(3000px, 0, 0);
+                -ms-transform: translate3d(3000px, 0, 0);
+                transform: translate3d(3000px, 0, 0)
+            }
+            60% {
+                opacity: 1;
+                -webkit-transform: translate3d(-25px, 0, 0);
+                -ms-transform: translate3d(-25px, 0, 0);
+                transform: translate3d(-25px, 0, 0)
+            }
+            75% {
+                -webkit-transform: translate3d(10px, 0, 0);
+                -ms-transform: translate3d(10px, 0, 0);
+                transform: translate3d(10px, 0, 0)
+            }
+            90% {
+                -webkit-transform: translate3d(-5px, 0, 0);
+                -ms-transform: translate3d(-5px, 0, 0);
+                transform: translate3d(-5px, 0, 0)
+            }
+            100% {
+                -webkit-transform: none;
+                -ms-transform: none;
+                transform: none
+            }
+        }
+
+        .bounceInRight {
+            -webkit-animation-name: bounceInRight;
+            animation-name: bounceInRight
+        }
+        @-webkit-keyframes bounceInUp {
+            0%, 100%, 60%, 75%, 90% {
+                -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+                transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
+            }
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(0, 3000px, 0);
+                transform: translate3d(0, 3000px, 0)
+            }
+            60% {
+                opacity: 1;
+                -webkit-transform: translate3d(0, -20px, 0);
+                transform: translate3d(0, -20px, 0)
+            }
+            75% {
+                -webkit-transform: translate3d(0, 10px, 0);
+                transform: translate3d(0, 10px, 0)
+            }
+            90% {
+                -webkit-transform: translate3d(0, -5px, 0);
+                transform: translate3d(0, -5px, 0)
+            }
+            100% {
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0)
+            }
+        }
+
+        @keyframes bounceInUp {
+            0%, 100%, 60%, 75%, 90% {
+                -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+                transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
+            }
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(0, 3000px, 0);
+                -ms-transform: translate3d(0, 3000px, 0);
+                transform: translate3d(0, 3000px, 0)
+            }
+            60% {
+                opacity: 1;
+                -webkit-transform: translate3d(0, -20px, 0);
+                -ms-transform: translate3d(0, -20px, 0);
+                transform: translate3d(0, -20px, 0)
+            }
+            75% {
+                -webkit-transform: translate3d(0, 10px, 0);
+                -ms-transform: translate3d(0, 10px, 0);
+                transform: translate3d(0, 10px, 0)
+            }
+            90% {
+                -webkit-transform: translate3d(0, -5px, 0);
+                -ms-transform: translate3d(0, -5px, 0);
+                transform: translate3d(0, -5px, 0)
+            }
+            100% {
+                -webkit-transform: translate3d(0, 0, 0);
+                -ms-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0)
+            }
+        }
+
+        .bounceInUp {
+            -webkit-animation-name: bounceInUp;
+            animation-name: bounceInUp
+        }
+        @-webkit-keyframes zoomInLeft {
+            0% {
+                opacity: 0;
+                -webkit-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+                transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+                -webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
+                animation-timing-function: cubic-bezier(0.55, .055, .675, .19)
+            }
+            60% {
+                opacity: 1;
+                -webkit-transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+                transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+                -webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+                animation-timing-function: cubic-bezier(0.175, .885, .32, 1)
+            }
+        }
+
+        @keyframes zoomInLeft {
+            0% {
+                opacity: 0;
+                -webkit-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+                -ms-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+                transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+                -webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
+                animation-timing-function: cubic-bezier(0.55, .055, .675, .19)
+            }
+            60% {
+                opacity: 1;
+                -webkit-transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+                -ms-transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+                transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+                -webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+                animation-timing-function: cubic-bezier(0.175, .885, .32, 1)
+            }
+        }
+
+        .zoomInLeft {
+            -webkit-animation-name: zoomInLeft;
+            animation-name: zoomInLeft
+        }
+
+        @-webkit-keyframes zoomInRight {
+            0% {
+                opacity: 0;
+                -webkit-transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+                transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+                -webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
+                animation-timing-function: cubic-bezier(0.55, .055, .675, .19)
+            }
+            60% {
+                opacity: 1;
+                -webkit-transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+                transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+                -webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+                animation-timing-function: cubic-bezier(0.175, .885, .32, 1)
+            }
+        }
+
+        @keyframes zoomInRight {
+            0% {
+                opacity: 0;
+                -webkit-transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+                -ms-transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+                transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+                -webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
+                animation-timing-function: cubic-bezier(0.55, .055, .675, .19)
+            }
+            60% {
+                opacity: 1;
+                -webkit-transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+                -ms-transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+                transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+                -webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+                animation-timing-function: cubic-bezier(0.175, .885, .32, 1)
+            }
+        }
+
+        .zoomInRight {
+            -webkit-animation-name: zoomInRight;
+            animation-name: zoomInRight
+        }
+        @-webkit-keyframes bounceInUp {
+            0%, 100%, 60%, 75%, 90% {
+                -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+                transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
+            }
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(0, 3000px, 0);
+                transform: translate3d(0, 3000px, 0)
+            }
+            60% {
+                opacity: 1;
+                -webkit-transform: translate3d(0, -20px, 0);
+                transform: translate3d(0, -20px, 0)
+            }
+            75% {
+                -webkit-transform: translate3d(0, 10px, 0);
+                transform: translate3d(0, 10px, 0)
+            }
+            90% {
+                -webkit-transform: translate3d(0, -5px, 0);
+                transform: translate3d(0, -5px, 0)
+            }
+            100% {
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0)
+            }
+        }
+
+        @keyframes bounceInUp {
+            0%, 100%, 60%, 75%, 90% {
+                -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+                transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
+            }
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(0, 3000px, 0);
+                -ms-transform: translate3d(0, 3000px, 0);
+                transform: translate3d(0, 3000px, 0)
+            }
+            60% {
+                opacity: 1;
+                -webkit-transform: translate3d(0, -20px, 0);
+                -ms-transform: translate3d(0, -20px, 0);
+                transform: translate3d(0, -20px, 0)
+            }
+            75% {
+                -webkit-transform: translate3d(0, 10px, 0);
+                -ms-transform: translate3d(0, 10px, 0);
+                transform: translate3d(0, 10px, 0)
+            }
+            90% {
+                -webkit-transform: translate3d(0, -5px, 0);
+                -ms-transform: translate3d(0, -5px, 0);
+                transform: translate3d(0, -5px, 0)
+            }
+            100% {
+                -webkit-transform: translate3d(0, 0, 0);
+                -ms-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0)
+            }
+        }
+
+        .bounceInUp {
+            -webkit-animation-name: bounceInUp;
+            animation-name: bounceInUp
+        }
+        @-webkit-keyframes rotateInDownLeft {
+            0% {
+                -webkit-transform-origin: left bottom;
+                transform-origin: left bottom;
+                -webkit-transform: rotate3d(0, 0, 1, -45deg);
+                transform: rotate3d(0, 0, 1, -45deg);
+                opacity: 0
+            }
+            100% {
+                -webkit-transform-origin: left bottom;
+                transform-origin: left bottom;
+                -webkit-transform: none;
+                transform: none;
+                opacity: 1
+            }
+        }
+
+        @keyframes rotateInDownLeft {
+            0% {
+                -webkit-transform-origin: left bottom;
+                -ms-transform-origin: left bottom;
+                transform-origin: left bottom;
+                -webkit-transform: rotate3d(0, 0, 1, -45deg);
+                -ms-transform: rotate3d(0, 0, 1, -45deg);
+                transform: rotate3d(0, 0, 1, -45deg);
+                opacity: 0
+            }
+            100% {
+                -webkit-transform-origin: left bottom;
+                -ms-transform-origin: left bottom;
+                transform-origin: left bottom;
+                -webkit-transform: none;
+                -ms-transform: none;
+                transform: none;
+                opacity: 1
+            }
+        }
+
+        .rotateInDownLeft {
+            -webkit-animation-name: rotateInDownLeft;
+            animation-name: rotateInDownLeft
+        }
+
+        @-webkit-keyframes rotateInDownRight {
+            0% {
+                -webkit-transform-origin: right bottom;
+                transform-origin: right bottom;
+                -webkit-transform: rotate3d(0, 0, 1, 45deg);
+                transform: rotate3d(0, 0, 1, 45deg);
+                opacity: 0
+            }
+            100% {
+                -webkit-transform-origin: right bottom;
+                transform-origin: right bottom;
+                -webkit-transform: none;
+                transform: none;
+                opacity: 1
+            }
+        }
+
+        @keyframes rotateInDownRight {
+            0% {
+                -webkit-transform-origin: right bottom;
+                -ms-transform-origin: right bottom;
+                transform-origin: right bottom;
+                -webkit-transform: rotate3d(0, 0, 1, 45deg);
+                -ms-transform: rotate3d(0, 0, 1, 45deg);
+                transform: rotate3d(0, 0, 1, 45deg);
+                opacity: 0
+            }
+            100% {
+                -webkit-transform-origin: right bottom;
+                -ms-transform-origin: right bottom;
+                transform-origin: right bottom;
+                -webkit-transform: none;
+                -ms-transform: none;
+                transform: none;
+                opacity: 1
+            }
+        }
+
+        .rotateInDownRight {
+            -webkit-animation-name: rotateInDownRight;
+            animation-name: rotateInDownRight
+        }
+        @-webkit-keyframes zoomInLeft {
+            0% {
+                opacity: 0;
+                -webkit-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+                transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+                -webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
+                animation-timing-function: cubic-bezier(0.55, .055, .675, .19)
+            }
+            60% {
+                opacity: 1;
+                -webkit-transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+                transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+                -webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+                animation-timing-function: cubic-bezier(0.175, .885, .32, 1)
+            }
+        }
+
+        @keyframes zoomInLeft {
+            0% {
+                opacity: 0;
+                -webkit-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+                -ms-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+                transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+                -webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
+                animation-timing-function: cubic-bezier(0.55, .055, .675, .19)
+            }
+            60% {
+                opacity: 1;
+                -webkit-transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+                -ms-transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+                transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+                -webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+                animation-timing-function: cubic-bezier(0.175, .885, .32, 1)
+            }
+        }
+
+        .zoomInLeft {
+            -webkit-animation-name: zoomInLeft;
+            animation-name: zoomInLeft
+        }
+
+        @-webkit-keyframes zoomInRight {
+            0% {
+                opacity: 0;
+                -webkit-transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+                transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+                -webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
+                animation-timing-function: cubic-bezier(0.55, .055, .675, .19)
+            }
+            60% {
+                opacity: 1;
+                -webkit-transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+                transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+                -webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+                animation-timing-function: cubic-bezier(0.175, .885, .32, 1)
+            }
+        }
+
+        @keyframes zoomInRight {
+            0% {
+                opacity: 0;
+                -webkit-transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+                -ms-transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+                transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+                -webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
+                animation-timing-function: cubic-bezier(0.55, .055, .675, .19)
+            }
+            60% {
+                opacity: 1;
+                -webkit-transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+                -ms-transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+                transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+                -webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+                animation-timing-function: cubic-bezier(0.175, .885, .32, 1)
+            }
+        }
+
+        .zoomInRight {
+            -webkit-animation-name: zoomInRight;
+            animation-name: zoomInRight
+        }
+
+
+    </style>
+</head>
+<body class="sztjPage ">
+<nav class="navBanner">
+    <section class="navBanner-main">
+        <a class="logo" href="index.html"></a>
+        <ul class="navList">
+            <li>
+                <a href="index.html">
+                    <b class="b1"></b>
+                    <b class="b2"></b>
+                </a>
+            </li>
+            <li>
+                <a href="academyIntroduced.html">
+                    <b class="b1"></b>
+                    <b class="b2"></b>
+                </a>
+            </li>
+            <li class="active">
+                <a href="teachRecommend.html">
+                    <b class="b1"></b>
+                    <b class="b2"></b>
+                </a>
+            </li>
+            <li>
+                <a href="courseIntroduction.html">
+                    <b class="b1"></b>
+                    <b class="b2"></b>
+                </a>
+            </li>
+            <li>
+                <a href="mingzhiActivity.html">
+                    <b class="b1"></b>
+                    <b class="b2"></b>
+                </a>
+            </li>
+            <li>
+                <a href="mingzhiStudents.html">
+                    <b class="b1"></b>
+                    <b class="b2"></b>
+                </a>
+            </li>
+            <li>
+                <a href="contactUs.html">
+                    <b class="b1"></b>
+                    <b class="b2"></b>
+                </a>
+            </li>
+            <li>
+                <a href="recruiting.html">
+                    <b class="b1"></b>
+                    <b class="b2"></b>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+</nav>
+
+<div class="big clearfix">
+    <ul class="frist clearfix ">
+        <li class="fristleft  bounceInLeft animated">
+            <div class="fristtop text">古筝老师-汪梦圆</div><br/>
+
+
+            <div class="fristmiddle">
+                <q class="wen2">
+                    不可有傲气，不可无傲骨
+                </q>
+            </div><br/>
+            <div class="wen">
+                <p>高级教师资格证<br/>
+                    自幼习琴，曾多次获奖<br/>
+                    新人大赛民乐组优秀表演奖<br/>
+                    闪亮新星古筝组金奖等等</p>
+            </div>
+        </li>
+        <li class="fristright animated bounceInRight"><img src="images/wangmengyuan.png"> </li>
+
+    </ul>
+
+    <ul class="two clearfix ">
+
+        <li class="twoleft animated bounceInUp" ><img src="images/zhangyuan.png"  > </li>
+
+        <li class="tworight animated bounceInUp">
+            <div class="twotop text">围棋老师-张源</div><br/>
+            <div class="twomiddle">
+                <q class="wen2">棋虽小道，品德最尊
+                </q>
+            </div><br/>
+            <div class="wen">
+                业余五段，美籍华人。<br/>
+                曾在美国西雅图开办围棋培训班<br/>
+                曾任职于美中交流理事会文化机构<br/>
+                负责中美围棋文化交流
+            </div>
+
+        </li>
+
+
+    </ul>
+
+    <ul class="three clearfix ">
+
+        <li class="threeleft animated zoomInLeft">
+            <div class="threetop text">书法老师-张汝杰</div><br/>
+            <di class="threemiddle">
+                <q class="wen2">踏遍红尘千万朵，且以笔墨诉平生
+                </q>
+            </di><br/>
+            <div class="wen">
+                自幼学习书画<br/>
+                师从李志平教授<br/>
+                尤胜书法教学<br/>
+                六年书法教学经验<br/>
+                擅长楷书结体的讲解<br/>
+                独特专业的教学方法
+
+            </div>
+        </li>
+        <li class="threeright animated zoomInRight"><img src="images/zhangrujie.png" > </li>
+
+    </ul>
+
+
+    <ul class="four clearfix">
+
+        <li class="fourleft animated bounceInUp"><img src="images/xianghao.png"> </li>
+
+        <li class="fouright animated bounceInUp">
+            <div class="fourtop text">国画老师-王向豪</div><br/>
+            <div class="fourmiddle">
+                <q class="wen2">敏而好学，不耻下问
+                </q>
+            </div><br/>
+            <div class="wen">
+                师从孔耘<br/>
+                杭州师范大学美术学院国画专业<br/>
+                西湖韵当代青年篆刻组荣誉证书<br/>
+                西湖大彩虹志愿者协会特聘教师<br/>
+                曾保淑塔实验学院从事国画教学
+            </div>
+        </li>
+
+    </ul>
+
+
+    <ul class="five clearfix">
+
+        <li class="fiveleft animated rotateInDownLeft">
+            <div class="fivetop text">国学老师-郑岸青</div><br/>
+            <div class="fivemiddle">
+                <q class="wen2">积一时之硅步，至千里之遥程</q>
+            </div><br/>
+            <div class="wen">
+                高级老师资格证<br/>
+                从事少儿教育四年，熟悉少儿心理学<br/>
+                幼儿蒙学方面主教《弟子规》、《三字经》、《拼音》、《识字》等
+            </div>
+        </li>
+        <li class="fiveright animated rotateInDownRight">
+            <img src="images/zhenganqing.png"/> >
+        </li>
+
+    </ul>
+
+
+    <ul class="six clearfix">
+
+        <li class="sixleft animated zoomInLeft" ><img src="images/liguilang.png" ></li>
+        <li class="sixright animated zoomInRight" >
+            <div class="sixtop text">茶艺老师-李桂兰</div><br/>
+            <div class="sixmiddle">
+                <q class="wen2">路漫漫其修远兮，吾将上下而求索
+                </q>
+            </div><br/>
+            <div class="wen">
+                国家高级茶艺师<br/>
+                从事茶文化传播四载有余<br/>
+                华南农业大赛银奖学茶学专业<br/>
+                荣获广东茶艺技能大赛银奖
+            </div>
+        </li>
+
+    </ul>
+    <div class="seven">
+        <div class="seventop" clearfix>
+            <div class=" seven1"  >
+                <img src="images/liguilang.png" >
+                <a href="#">
+                    <div class="bmbox">
+                        <span class="wen1">茶艺老师</span><br/>
+                        <span class="wen2">李桂兰</span><br/>
+                        <span class="p1"><q>路漫漫其修远兮，吾将上下而求索
+                  </q></span>
+                    </div>
+                </a>
+
+            </div>
+            <div class=" seven1" >
+                <img src="images/liguilang.png" >
+                <a href="#">
+                    <div class="bmbox">
+                        <span class="wen1">茶艺老师</span><br/>
+                        <span class="wen2">李桂兰</span><br/>
+                        <span class="p1"><q>路漫漫其修远兮，吾将上下而求索
+                </q></span>
+                    </div>
+                </a>
+
+            </div>
+            <div class=" seven1"  >
+                <img src="images/liguilang.png" >
+                <a href="#">
+                    <div class="bmbox">
+                        <span class="wen1">茶艺老师</span><br/>
+                        <span class="wen2">李桂兰</span><br/>
+                        <span class="p1"><q>路漫漫其修远兮，吾将上下而求索
+                  </q></span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+        <div class="seventop" clearfix>
+            <div class=" seven1"  >
+                <img src="images/liguilang.png" >
+                <a href="#">
+                    <div class="bmbox">
+                        <span class="wen1">茶艺老师</span><br/>
+                        <span class="wen2">李桂兰</span><br/>
+                        <span class="p1"><q>路漫漫其修远兮，吾将上下而求索
+                  </q></span>
+                    </div>
+                </a>
+
+            </div>
+            <div class=" seven1" >
+                <img src="images/liguilang.png" >
+                <a href="#">
+                    <div class="bmbox">
+                        <span class="wen1">茶艺老师</span><br/>
+                        <span class="wen2">李桂兰</span><br/>
+                        <span class="p1"><q>路漫漫其修远兮，吾将上下而求索
+                </q></span>
+                    </div>
+                </a>
+
+            </div>
+            <div class=" seven1"  >
+                <img src="images/liguilang.png" >
+                <a href="#">
+                    <div class="bmbox">
+                        <span class="wen1">茶艺老师</span><br/>
+                        <span class="wen2">李桂兰</span><br/>
+                        <q class="lest">路漫漫其修远兮，吾将上下而求索
+                        </q>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+</div>
+<<div class="eightth">
+    <ul class="eight">
+        <li><strong>钱江学堂</strong></li>
+        <li>0571-85186096</li>
+        <li>杭州市上城区中豪·望江国际1号楼3楼</li><br/>
+        <li><strong>西溪学堂</strong></li>
+        <li>0571-87248006</li>
+        <li>杭州市西湖区西溪银泰3号楼北楼113-114</li><br/>
+        <li>COPYRIGHT2018 杭州日新教育咨询有限公司.ALL RIGHTS RESERVED</li>
+        <li>浙ICP备0000008号-1 网站设计与建设：杭州敬惜设计</li>
+
+
+    </ul>
+</div>
+</body>
+</html>

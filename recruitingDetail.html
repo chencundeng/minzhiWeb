@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>招贤纳士</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/welcome.css">
+    <style>
+
+        .recruiting-main{
+            margin-top: 8%;
+
+        }
+        .recruitingTab{
+            top:74px;
+        }
+        .navBanner{
+            position:fixed;
+        }
+
+        li:hover{
+            color: #988678;
+            cursor:pointer
+        }
+       p:first-child{
+            font-size: 22px;
+
+        }
+
+        .title{
+            display: inline-block;
+            font-size: 18px;
+            font-weight: bold;
+            color: #988678;
+            border: #988678 1px solid;
+
+            padding-left:  18px ;
+            padding-right: 18px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            line-height: 35px;
+            letter-spacing: 2px;
+
+        }
+
+        p{
+            color: #3c3c3c;
+            line-height: 40px;
+        }
+        .recruiting-info-text{
+            margin: 3%;
+        }
+        .fourth{ width: 100%;
+
+            background-color: #8C8077;
+            margin-top: 10%;
+
+        }
+
+        .four {
+            width: 400px;
+
+            padding-top: 2%;
+            padding-bottom: 2%;
+
+            text-align: center;
+            font-size: 15px;
+            line-height: 20px;
+            margin-left: 30%;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body class="indexPage">
+<nav class="navBanner">
+    <section class="navBanner-main">
+        <a class="logo" href="index.html"></a>
+        <ul class="navList">
+            <li>
+                <a href="index.html">
+                    <b class="b1"></b>
+                    <b class="b2"></b>
+                </a>
+            </li>
+            <li>
+                <a href="academyIntroduced.html">
+                    <b class="b1"></b>
+                    <b class="b2"></b>
+                </a>
+            </li>
+            <li>
+                <a href="teachRecommend.html">
+                    <b class="b1"></b>
+                    <b class="b2"></b>
+                </a>
+            </li>
+            <li>
+                <a href="courseIntroduction.html">
+                    <b class="b1"></b>
+                    <b class="b2"></b>
+                </a>
+            </li>
+            <li>
+                <a href="mingzhiActivity.html">
+                    <b class="b1"></b>
+                    <b class="b2"></b>
+                </a>
+            </li>
+            <li>
+                <a href="mingzhiStudents.html">
+                    <b class="b1"></b>
+                    <b class="b2"></b>
+                </a>
+            </li>
+            <li>
+                <a href="contactUs.html">
+                    <b class="b1"></b>
+                    <b class="b2"></b>
+                </a>
+            </li>
+            <li>
+                <a href="recruiting.html">
+                    <b class="b1"></b>
+                    <b class="b2"></b>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+</nav>
+<section class="recruiting-main"  id="recruitingDetail">
+    <nav class="recruitingTab">
+        <h5>教学部</h5>
+        <ul>
+            <li v-for="(item,index) in jiaoxue" :class="{active:item.id == num}" @click="tab(item.id)">{{item.name}}</li>
+        </ul>
+        <h5>课程部</h5>
+        <ul>
+            <li v-for="(item,index) in kecheng" :class="{active:item.id == num}" @click="tab(item.id)">{{item.name}}</li>
+        </ul>
+        <h5>市场部</h5>
+        <ul>
+            <li v-for="(item,index) in shichang" :class="{active:item.id == num}" @click="tab(item.id)">{{item.name}}</li>
+        </ul>
+    </nav>
+    <section class="recruiting-info" v-for='(itemCon,index) in details' v-show=" num == itemCon.id">
+        <section class="recruiting-info-text" v-html="itemCon.info">
+        </section>
+    </section>
+</section>
+<div class="fourth ">
+    <div class="four">
+        <span><strong>钱江学堂</strong></span><br/>
+        <span>0571-85186096</span><br/>
+        <span>杭州市上城区中豪·望江国际1号楼3楼</span><br/><br/>
+        <span><strong>西溪学堂</strong></span><br/>
+        <span>0571-87248006</span><br/>
+        <span>杭州市西湖区西溪银泰3号楼北楼113-114</span><br/><br/>
+        <span>COPYRIGHT?2018 杭州日新教育咨询有限公司.ALL RIGHTS RESERVED</span><br/>
+        <span>浙ICP备0000008号-1 网站设计与建设：杭州敬惜设计</span>
+    </div>
+</div>
+</body>
+<script src="js/jquery-2.2.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<script src="js/recruiting.js"></script>
+</html>
