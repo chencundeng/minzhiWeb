@@ -7,6 +7,7 @@ li{
 }
 body{
     background-color: #E0D1BE;
+    overflow-x: hidden;
 }
 .clear:after{
     content:'';display:block;clear:both;height:0;overflow:hidden;visibility:hidden;
@@ -17,7 +18,7 @@ body{
 
 
 .bigbox{
-    width: 1100px;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -39,7 +40,7 @@ body{
     display: inline-block;
     float: left;
     background-repeat: no-repeat;
-
+   background-size: cover;
 }
 .fristrightimg{
     background-image: url("../images/chen.jpg");
@@ -48,36 +49,37 @@ body{
     display: inline-block;
     float: right;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
 
 
- .panel{
-     display: inline-block;
+.panel{
+    display: inline-block;
 
-     width:440px;
-     height: 388px;
+    width:440px;
+    height: 388px;
 
-     position: absolute;
-     top: 20%;
-     left: 40%;
-     color: rgba(255,255,255,0.8);
-     font-size: 28px;
-     box-sizing: border-box;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    color: rgba(255,255,255,0.8);
+    font-size: 28px;
+    box-sizing: border-box;
     padding-top:4%;
-     padding-left:10%;
-     line-height: 70px;
-     transform:perspective(500px) rotatey(-26deg);
-     transform-style:preserve-3d;
-     background-image: url("../images/back.png");
+    padding-left:10%;
+    line-height: 70px;
+    transform:perspective(500px) rotatey(-26deg);
+    transform-style:preserve-3d;
+    background-image: url("../images/back.png");
 
- }
+}
 
- .panel {
+.panel {
 
-     transform:rotatey(25deg);
- }
+    transform:rotatey(25deg);
+}
 
 
 .secondleftimg{
@@ -89,6 +91,7 @@ body{
     background-repeat: no-repeat;
     background-size:100% 100%;
     font-size: 0;
+    background-size: cover;
 
 }
 .secondrightimg{
@@ -99,6 +102,7 @@ body{
     float: right;
     background-repeat: no-repeat;
     background-size:100% 100%;
+    background-size: cover;
 
 
 }
@@ -115,6 +119,7 @@ body{
     float: left;
     background-repeat: no-repeat;
     background-size:100% 100%;
+    background-size: cover;
 }
 
 .thirdrightimg{
@@ -125,6 +130,7 @@ body{
     float: right;
     background-repeat: no-repeat;
     background-size:100% 100%;
+    background-size: cover;
 
 }
 .fourth{ width: 100%;

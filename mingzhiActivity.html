@@ -6,67 +6,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/welcome.css">
     <script src="js/jquery-2.2.0.min.js"></script>
-    <script src="js/jquery.mChange.zoom.js"></script>
-    <script src="js/jquery.transit.min.js"></script>
+    <link rel="icon" href="images/bitbug_favicon.ico" >
     <style>
-        .sroll{
-            position: relative;
-            top: 75px;
-        }
-        .sroll .focus {
-            margin-bottom: 26px;
-        }
-        .sroll .focus {
-            overflow: hidden;
-            position: relative;
-            width: 100%;
-        }
-        .sroll .focus li {
-            float: left;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-        }
-        .sroll .focus li a {
-            display: block;
-            width: 100%;
-            height: 100%;
-        }
-        .sroll .focus .prev {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100px;
-            height: 100%;
-            z-index: 10;
-        }
-        .sroll .focus .prev a {
-            position: absolute;
-            right: 0;
-            top: 50%;
-            margin-top: -40px;
-            width: 80px;
-            height: 80px;
-            background: url(images/indexScroll-prev.png) no-repeat center;
-        }
-        .sroll .focus .next {
-            position: absolute;
-            right: 0;
-            top: 0;
-            width: 100px;
-            height: 100%;
-            z-index: 10;
-        }
-        .sroll .focus .next a {
-            position: absolute;
-            left: 0;
-            top: 50%;
-            margin-top: -40px;
-            width: 80px;
-            height: 80px;
-            background: url(images/indexScroll-next.png) no-repeat center;
-        }
-
 
         .fourth{ width: 100%;
 
@@ -143,51 +84,6 @@
     </section>
 
 </nav>
-<section class="sroll">
-    <div class="focus" style="height: 486px;">
-        <div>
-            <a id="wrap-banner" href="javascript:void(0);"></a>
-            <ul>
-                <li class="s" style="transform: scale(1, 1); opacity: 1; z-index: 0; transition: opacity 800ms cubic-bezier(0, 1, 1, 1) 0s, transform 800ms cubic-bezier(0, 1, 1, 1) 0s, z-index 800ms cubic-bezier(0, 1, 1, 1) 0s;">
-                    <a href="javascript:void(0);" data-href="javascript:void(0);" style="background:url(images/active01.png) no-repeat center;background-size:80%; "></a>
-                </li>
-                <li style="transform: scale(1, 1); opacity: 0; z-index: -1;" class="">
-                    <a href="javascript:void(0);" data-href="auditions.html" style="background:url(images/indexScroll02.jpg) no-repeat center;background-size:auto 100%;"></a>
-                </li>
-                <li style="transform: scale(1.5, 1.5); opacity: 0; z-index: 0; transition: opacity 1000ms cubic-bezier(0.5, 0, 0.2, 1) 0s, transform 1000ms cubic-bezier(0.5, 0, 0.2, 1) 0s;" class="">
-                    <a href="javascript:void(0);" data-href="http://www.dpm.org.cn/collection/embroider/246078.html" style="background:url(images/indexScroll03.jpg) no-repeat center;background-size:80%;"></a>
-                </li>
-            </ul>
-            <div class="nav">
-                <i class="now"></i><i class=""></i><i class=""></i></div>
-            <script>
-                $('.focus .widget-area-edit,.focus .widget-area-notice').css({"top":"91px"});
-                $('.home .focus ul a').click(function(){
-                    var flag = false;
-                    $('.home .focus ul li').each(function(i, e){
-                        if( $(e).hasClass('s')) {
-                            var link = $(e).find('a').attr('data-href');
-                            dplus.track("焦点图",{"名称":"首页焦点图", "链接地址":link});
-                            if ( link != "" && link != "javascript:;" && link != "javascript:void(0);" ) {
-                                //$(e).find('a').attr('href', link).attr('target', '_blank').trigger('click');
-                                //window.open(link);
-                                $('.home .focus ul a').attr('href', link).attr('target', '_blank');
-                                flag = true;
-                            }
-                            else {
-                                $('.home .focus ul a').attr('href', 'javascript:void(0);').attr('target', '_self');
-                            }
-                        }
-                    })
-
-                    return flag;
-                });
-            </script>
-        </div>
-        <div class="prev"><a href="javascript:;"></a></div>
-        <div class="next"><a href="javascript:;"></a></div>
-    </div>
-</section>
 <section class="activityList">
     <section class="activityList-main">
         <section class="main-left">

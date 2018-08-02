@@ -1,18 +1,20 @@
-h4{
-    border-bottom: 2px solid #E0D1BE;
+.textop{
+    border-bottom: 2px solid #988678;
     padding-bottom:3px;
     width: 90px;/*.....框线条长度...*/
-    color: #E0D1BE;
+    color: #988678;
     font-size: 20px;
     margin-top: 10px;
+    font-weight: bold;
 
 
 }
-h6{
+.tex{
 
     margin-bottom: 15px;
     margin-top: 10px;
-    font-size: 15px;
+    font-size: 16px;
+    font-family: 微软雅黑;
 
 
 
@@ -20,6 +22,7 @@ h6{
 a {
     text-decoration: none;
     color: #000000;
+    padding-right: 50px;
 
 }
 

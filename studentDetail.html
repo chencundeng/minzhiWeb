@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>明志学员</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/welcome.css">
+    <link rel="icon" href="images/bitbug_favicon.ico" >
+    <style>
+
+
+        .courseTab{
+            top:74px;
+        }
+        .navBanner{
+            position:fixed;
+        }
+
+        li:hover{
+            color: #988678;
+            cursor:pointer
+        }
+        .title{
+            font-size: 20px;
+            color:#988678;
+            font-weight: bold;
+            line-height: 40px;
+        }
+        p{
+            font-size: 15px;
+            color: #988678;
+            line-height: 40px;
+            text-indent:2em ;
+        }
+        .courseDetail{
+            width: 100%;
+            background-color: #F7F2EF;
+        }
+        .courseDetail-main{
+            width: 1100px;
+            padding-top:60px;
+        }
+        .peopleInfo .info{
+            display: inline-block;
+            margin-top: 60px;
+        }
+        .peopleInfo .info p{
+            font-size: 18px;
+            line-height: 40px;
+            color: #333;
+        }
+        .peopleInfo .info p.name{
+            font-size:26px;
+            line-height: 60px;
+        }
+        img.studentImg{
+            width:300px;
+            margin-top:60px;
+        }
+        .fourth{
+            background-color: #8C8077;}
+
+        .four {
+            width:400px;
+            padding-top:2%;
+            text-align:center;
+            font-family: 微软雅黑;
+            font-size: 13px;
+            line-height: 20px;
+            margin-left: 40%;
+            color: #FFFFFF;
+        }
+        .otherInfo h6{
+            font-size: 18px;
+            color:#000;
+            line-height: 60px;
+            font-weight: bold;
+            padding-top: 20px;
+        }
+        .otherInfo img{
+            width:600px;
+            margin-bottom: 20px;
+        }
+        .course-info{
+            min-height: 600px;
+        }
+    </style>
+</head>
+<body class="courseDetail" style="background:#E1D2BF;">
+<nav class="navBanner">
+    <section class="navBanner-main">
+        <a class="logo" href="index.html"></a>
+        <ul class="navList">
+            <li>
+                <a href="index.html">
+                    <b class="b1"></b>
+                    <b class="b2"></b>
+                </a>
+            </li>
+            <li>
+                <a href="academyIntroduced.html">
+                    <b class="b1"></b>
+                    <b class="b2"></b>
+                </a>
+            </li>
+            <li>
+                <a href="teachRecommend.html">
+                    <b class="b1"></b>
+                    <b class="b2"></b>
+                </a>
+            </li>
+            <li>
+                <a href="courseIntroduction.html">
+                    <b class="b1"></b>
+                    <b class="b2"></b>
+                </a>
+            </li>
+            <li>
+                <a href="mingzhiActivity.html">
+                    <b class="b1"></b>
+                    <b class="b2"></b>
+                </a>
+            </li>
+            <li class="active">
+                <a href="mingzhiStudents.html">
+                    <b class="b1"></b>
+                    <b class="b2"></b>
+                </a>
+            </li>
+            <li>
+                <a href="contactUs.html">
+                    <b class="b1"></b>
+                    <b class="b2"></b>
+                </a>
+            </li>
+            <li>
+                <a href="recruiting.html">
+                    <b class="b1"></b>
+                    <b class="b2"></b>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+</nav>
+<section class="courseDetail-main"  id="courseDetail">
+
+    <nav class="courseTab">
+        <h5>明志学员</h5>
+        <ul>
+            <li v-for="(item,index) in names" :class="{active:index == num}" @click="tab(index)">{{item}}</li>
+        </ul>
+    </nav>
+    <section class="course-info" v-for='(itemCon,index) in details' v-show=" index == num">
+        <div class="peopleInfo">
+            <img class="studentImg" v-bind:src="itemCon.personalInfo.img" alt="">
+            <span class="info">
+                <p class="name">{{itemCon.personalInfo.name}}</p>
+                <p>课程：{{itemCon.personalInfo.kecheng}}</p>
+                <p>年龄：{{itemCon.personalInfo.age}}</p>
+                <p>学龄：{{itemCon.personalInfo.schoolAge}}</p>
+
+            </span>
+        </div>
+        <div class="otherInfo" v-for='(otherInfoCon,index) in itemCon.otherInfo'>
+            <h6>{{otherInfoCon.title}}</h6>
+            <div v-html="otherInfoCon.content"></div>
+        </div>
+
+    </section>
+</section>
+<div class="fourth ">
+    <div class="four">
+        <span><strong>钱江学堂</strong></span><br/>
+        <span>0571-85186096</span><br/>
+        <span>杭州市上城区中豪·望江国际1号楼3楼</span><br/><br/>
+        <span><strong>西溪学堂</strong></span><br/>
+        <span>0571-87248006</span><br/>
+        <span>杭州市西湖区西溪银泰3号楼北楼113-114</span><br/><br/>
+        <span>COPYRIGHT?2018 杭州日新教育咨询有限公司.ALL RIGHTS RESERVED</span><br/>
+        <span>浙ICP备0000008号-1 网站设计与建设：杭州敬惜设计</span>
+    </div>
+</div>
+
+
+</body>
+<script src="js/jquery-2.2.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<script src="js/studentDetail.js"></script>
+</html>

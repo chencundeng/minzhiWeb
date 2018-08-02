@@ -369,7 +369,7 @@ body.welcomePage
     width: 50%;
     box-sizing: border-box;
 }
-.floor2-inner .floor2-l{n
+.floor2-inner .floor2-l{
     padding-right:10px;
     float: left;
 }
@@ -440,7 +440,7 @@ body.welcomePage
 .teacher-info,
 .course-info,
 .recruiting-info{
-    margin-left:150px;
+    margin-left:170px;
 }
 .teachRecommendDetail-main .teacherImg{
     width: 30%;
@@ -470,6 +470,12 @@ body.welcomePage
 .courseTab h5,
 .recruitingTab h5{
     background:#988678;
+}
+.teacherTab li.active,
+.courseTab li.active,
+.recruitingTab li.active{
+    background: #EDE0CD;
+    color: #B08F6E;
 }
 /*teachRecommendDetail end*/
 
@@ -730,20 +736,20 @@ body.welcomePage
     height: 476px;
     float: right;
     background: url("../images/map2.png") no-repeat;
-    background-size: 85%;
-    background-position: 96px 40px;
+    background-size: 82%;
+    background-position: 80px 40px;
     position: relative;
 }
 .contactUs-main .bottom .btm-right .address{
     top: 43%;
     position: absolute;
-    left: 32%;
+    left: 29%;
 }
 .contactUs-main .bottom .btm-right .hover{
     position: absolute;
     top: 31%;
     width: 40px;
-    left: 37%;
+    left: 34%;
 }
 
 /*contactUs end*/
@@ -752,20 +758,19 @@ body.welcomePage
 /*activity start*/
 .activityList-main{
     width: 1100px;
-    min-height: 200px;
-    margin: 0 auto;
-    margin-top: 77px;
+    min-height: 500px;
+    margin: 100px auto 51px;
     box-sizing: border-box;
     padding-left: 90px;
     background: url(../images/mingzhiActivity.png) no-repeat #e0d1be;
     background-size: 30px;
-    background-position: 30px 30px;
+    background-position: 30px 50px;
 }
 
 .activityList-main .main-left{
-    padding: 30px 30px 30px 0;
+    padding: 50px 50px 50px 0;
 }
-.activityList-main .main-left li,{
+.activityList-main .main-left li{
     line-height: 35px;
 }
 .activityList-main .main-left li a{
