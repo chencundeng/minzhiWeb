@@ -2,59 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>师资推荐</title>
+    <title>明志活动</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/welcome.css">
+    <script src="js/jquery-2.2.0.min.js"></script>
     <link rel="icon" href="images/bitbug_favicon.ico" >
-    <style>
-
-        .teacherTab{
-            top:74px;
-        }
-
-        .navBanner{
-            position: fixed;
-        }
-        li:hover{
-            color: #988678;
-            cursor: pointer;
-        }
-        .teachRecommendDetail{
-            width: 100%;
-        }
-
-
-        .teachRecommendDetail-main{
-            width: 90%;
-
-        }
-        .teacher-info,.teacher-info-text{
-
-            padding-top: 10%;
-            padding-left: 2%;
-
-        }
-      .teacher-info-text{
-          display: inline-block;
-
-      }
-
-        .name{
-            font-size: 25px;
-            line-height: 60px;
-        }
-
-        p{
-            line-height: 35px;
-        }
-        .teacher-info-text>p{
-            font-size: 20px;
-            line-height: 60px;
-
-        }
-    </style>
 </head>
-<body class="teachRecommendDetail">
+<body>
 <nav class="navBanner">
     <section class="navBanner-main">
         <a class="logo" href="index.html"></a>
@@ -71,7 +25,7 @@
                     <b class="b2"></b>
                 </a>
             </li>
-            <li class="active">
+            <li>
                 <a href="teachRecommend.html">
                     <b class="b1"></b>
                     <b class="b2"></b>
@@ -83,7 +37,7 @@
                     <b class="b2"></b>
                 </a>
             </li>
-            <li>
+            <li class="active">
                 <a href="mingzhiActivity.html">
                     <b class="b1"></b>
                     <b class="b2"></b>
@@ -111,24 +65,7 @@
     </section>
 
 </nav>
-<section class="teachRecommendDetail-main"  id="teachRecommendDetail">
-    <nav class="teacherTab">
-        <h5>师资推荐</h5>
-        <ul>
-            <li v-for="(item,index) in names" :class="{active:index == num}" @click="tab(index)">{{item}}</li>
-        </ul>
-    </nav>
-    <section class="teacher-info" v-for='(itemCon,index) in details' v-show=" index == num">
-        <img class="teacherImg" v-bind:src="itemCon.imgUrl" alt=""wi>
-        <section class="teacher-info-text">
-            <h3 class="name">{{itemCon.post}} —— {{itemCon.name}}</h3>
-            <p>{{itemCon.remarks}}</p>
-            <section v-for="(info,index) in itemCon.info">
-                <p>{{info}}</p>
-            </section>
-        </section>
-    </section>
-</section>
+
 <div class="frouth">
     <ul class="frou">
         <li><strong>钱江学堂</strong></li>
@@ -143,7 +80,5 @@
 
 </div>
 </body>
-<script src="js/jquery-2.2.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
-<script src="js/teachRecommendDetail.js"></script>
+
 </html>

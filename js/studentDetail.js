@@ -28,8 +28,7 @@ $(function(){
                         {
                             title:'王陈馨嘉作品欣赏',
                             content:'<img src="images/wcxjimg1.jpg"/>' +
-                                '<img src="images/wcxjimg2.jpg"/>' +
-                                '<img src="images/wcxjimg3.jpg"/>'
+                                '<img src="images/wcxjimg2.jpg"/>'
                         },
                         {
                             title:'学习感受',

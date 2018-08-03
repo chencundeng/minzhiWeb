@@ -73,7 +73,7 @@ $(function(){
                         '<p>5.讲义管理，负责校区的所有讲义数量、用途、出处的管理；</p>' +
                         '<p>6.保持和学员及家长的良好沟通，处理教学投诉，解决问题，提升学员及家长对学校的满意度，提高学员的出勤率；</p>' +
                         '<p>7.配合学校完成其他交办的工作。</p>' +
-                        '<p class="title">任职要求：</p>' +
+                        '<p class="title">任职要求</p>' +
                         '<p>1.形象气质佳、亲和力强、知识广，在教育培训行业从事过教学管理者优先考虑；</p>' +
                         '<p>2.良好的沟通协调能力、教师团队的建设维护；</p>' +
                         '<p>3.有独立的工作能力并能承受工作压力，适应弹性的工作时间；</p>' +
@@ -366,5 +366,22 @@ $(function(){
                 this.num = index;
             }
         }
+    });
+
+    $('.recruitingTab').on('click','h5',function(){
+        var that = $(this);
+        var index = that.index();
+        switch(index){
+            case 0:
+                $('.recruitingTab ul').eq(0).toggle();
+                break;
+            case 2:
+                $('.recruitingTab ul').eq(1).toggle();
+                break;
+            case 4:
+                $('.recruitingTab ul').eq(2).toggle();
+                break;
+        }
+        console.log(that)
     })
 })
