@@ -7,6 +7,44 @@
     <link rel="stylesheet" href="css/welcome.css">
     <script src="js/jquery-2.2.0.min.js"></script>
     <link rel="icon" href="images/bitbug_favicon.ico" >
+    <style>
+        body{
+            background-color: #e0d1be;
+        }
+        .recruiting-info{
+            width: 80%;
+            padding-top: 100px;
+        }
+        h1,h3{
+            text-align: center;
+            line-height: 40px;
+            color: #444;
+            font-weight: bold;
+        }
+        h1{
+            font-size: 25px;
+            padding: 10px;
+        }
+        h3{
+            font-size: 20px;
+            text-align: left;
+            padding: 10px;
+        }
+        p{
+            color: #3c3c3c;
+            text-indent: 2em;
+            line-height: 30px;
+            padding-bottom: 10px;
+            text-align: left;
+        }
+        img{
+            width: 100%;
+        }
+        div{
+            text-align: center;
+            line-height: 35px;
+        }
+    </style>
 </head>
 <body>
 <nav class="navBanner">
@@ -63,8 +101,13 @@
             </li>
         </ul>
     </section>
-
 </nav>
+<div id="activityDetailPage">
+    <section class="recruiting-info" v-for="(itemCon,index) in detail" v-show=" num == index" >
+        <section class="recruiting-info-text" v-html="itemCon.title">
+        </section>
+    </section>
+</div>
 
 <div class="frouth">
     <ul class="frou">
@@ -77,8 +120,10 @@
         <li>COPYRIGHT©2018 杭州日新教育咨询有限公司.ALL RIGHTS RESERVED</li>
         <li>浙ICP备0000008号-1 网站设计与建设：杭州敬惜设计</li>
     </ul>
-
 </div>
 </body>
+<script src="js/jquery-2.2.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<script src="js/mingzhiActivityDetail.js"></script>
 
 </html>
