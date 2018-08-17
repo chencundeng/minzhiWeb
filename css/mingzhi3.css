@@ -56,7 +56,7 @@ body{
 
 
 
-.panel{
+.panel1{
     display: inline-block;
 
     width:440px;
@@ -73,11 +73,11 @@ body{
     line-height: 70px;
     transform:perspective(500px) rotatey(-26deg);
     transform-style:preserve-3d;
-    background-image: url("../images/back.png");
+    background-image: url("../images/back.png") !important;
 
 }
 
-.panel {
+.panel1 {
 
     transform:rotatey(25deg);
 }
@@ -150,4 +150,14 @@ body{
     margin-left: 40%;
     color: #FFFFFF;
 }
+@media (max-width: 991px) and (min-width: 768px) {
+    .bigbox{
+        width: 100%;
+        margin-top: 1.5rem;
 
+    }
+    .panel1 li{
+        font-size: 0.3rem;
+    }
+
+}

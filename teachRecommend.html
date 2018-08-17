@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!--<link rel="stylesheet" href="css/reset.css">-->
+    <link rel="stylesheet" href="css/reset.css">
     <title>书院介绍</title>
     <link rel="stylesheet" href="css/welcome.css">
     <link rel="icon" href="images/bitbug_favicon.ico" >
+    <link rel="stylesheet" href="css/Bootstrap.css">
+    <script src="js/jquery-2.2.0.min.js"></script>
+    <script src="js/rem.js"></script>
     <style>
         *{
             margin: 0;
@@ -36,21 +39,21 @@
             font-size: 12px;
         }
 
-        .frist{
+        .frist ,.lest{
 
             width: 100%;
             position: relative;
 
 
         }
-        .fristleft{
+        .tex{
 
             display: inline-block;
             float: left;
             border: #E0D1BE 1px solid;
-            width: 35%;
+            width: 50%;
             position: absolute;
-            left: 5%;
+
             top: 30%;
             color: #000000;
             line-height: 25px;
@@ -68,10 +71,10 @@
 
 
 
-        .fristright{
+        .fristright,.lestright{
             display: inline-block;
             float: right;
-            width: 55%;
+            width: 50%;
 
         }
         .two{
@@ -263,543 +266,27 @@
 
         }
 
-        @-webkit-keyframes bounceInLeft {
-            0%, 100%, 60%, 75%, 90% {
-                -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
-                transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
-            }
-            0% {
-                opacity: 0;
-                -webkit-transform: translate3d(-3000px, 0, 0);
-                transform: translate3d(-3000px, 0, 0)
-            }
-            60% {
-                opacity: 1;
-                -webkit-transform: translate3d(25px, 0, 0);
-                transform: translate3d(25px, 0, 0)
-            }
-            75% {
-                -webkit-transform: translate3d(-10px, 0, 0);
-                transform: translate3d(-10px, 0, 0)
-            }
-            90% {
-                -webkit-transform: translate3d(5px, 0, 0);
-                transform: translate3d(5px, 0, 0)
-            }
-            100% {
-                -webkit-transform: none;
-                transform: none
-            }
-        }
 
-        @keyframes bounceInLeft {
-            0%, 100%, 60%, 75%, 90% {
-                -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
-                transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
+        @media (max-width: 991px) and (min-width: 768px){
+            .big{
+                width:100%;
+                margin-top: 1.5rem;
             }
-            0% {
-                opacity: 0;
-                -webkit-transform: translate3d(-3000px, 0, 0);
-                -ms-transform: translate3d(-3000px, 0, 0);
-                transform: translate3d(-3000px, 0, 0)
+            .seven1{
+                width: 33%;
+                margin-top: 0;
             }
-            60% {
-                opacity: 1;
-                -webkit-transform: translate3d(25px, 0, 0);
-                -ms-transform: translate3d(25px, 0, 0);
-                transform: translate3d(25px, 0, 0)
-            }
-            75% {
-                -webkit-transform: translate3d(-10px, 0, 0);
-                -ms-transform: translate3d(-10px, 0, 0);
-                transform: translate3d(-10px, 0, 0)
-            }
-            90% {
-                -webkit-transform: translate3d(5px, 0, 0);
-                -ms-transform: translate3d(5px, 0, 0);
-                transform: translate3d(5px, 0, 0)
-            }
-            100% {
-                -webkit-transform: none;
-                -ms-transform: none;
-                transform: none
+            .wapimg{
+                position: absolute;
+                top: -1.5rem;
+                width: 3.5rem;
+                left: 0.3rem;
             }
         }
-
-        .bounceInLeft {
-            -webkit-animation-name: bounceInLeft;
-            animation-name: bounceInLeft
-        }
-        .animated {
-            -webkit-animation-duration: 5s;
-            animation-duration: 5s;
-            -webkit-animation-fill-mode: both;
-            animation-fill-mode: both
-        }
-        .animated.infinite {
-            -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite
-        }
-
-        .animated.hinge {
-            -webkit-animation-duration: 20s;
-            animation-duration: 20s
-        }
-
-        @-webkit-keyframes bounceInRight {
-            0%, 100%, 60%, 75%, 90% {
-                -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
-                transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
-            }
-            0% {
-                opacity: 0;
-                -webkit-transform: translate3d(3000px, 0, 0);
-                transform: translate3d(3000px, 0, 0)
-            }
-            60% {
-                opacity: 1;
-                -webkit-transform: translate3d(-25px, 0, 0);
-                transform: translate3d(-25px, 0, 0)
-            }
-            75% {
-                -webkit-transform: translate3d(10px, 0, 0);
-                transform: translate3d(10px, 0, 0)
-            }
-            90% {
-                -webkit-transform: translate3d(-5px, 0, 0);
-                transform: translate3d(-5px, 0, 0)
-            }
-            100% {
-                -webkit-transform: none;
-                transform: none
-            }
-        }
-
-        @keyframes bounceInRight {
-            0%, 100%, 60%, 75%, 90% {
-                -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
-                transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
-            }
-            0% {
-                opacity: 0;
-                -webkit-transform: translate3d(3000px, 0, 0);
-                -ms-transform: translate3d(3000px, 0, 0);
-                transform: translate3d(3000px, 0, 0)
-            }
-            60% {
-                opacity: 1;
-                -webkit-transform: translate3d(-25px, 0, 0);
-                -ms-transform: translate3d(-25px, 0, 0);
-                transform: translate3d(-25px, 0, 0)
-            }
-            75% {
-                -webkit-transform: translate3d(10px, 0, 0);
-                -ms-transform: translate3d(10px, 0, 0);
-                transform: translate3d(10px, 0, 0)
-            }
-            90% {
-                -webkit-transform: translate3d(-5px, 0, 0);
-                -ms-transform: translate3d(-5px, 0, 0);
-                transform: translate3d(-5px, 0, 0)
-            }
-            100% {
-                -webkit-transform: none;
-                -ms-transform: none;
-                transform: none
-            }
-        }
-
-        .bounceInRight {
-            -webkit-animation-name: bounceInRight;
-            animation-name: bounceInRight
-        }
-        @-webkit-keyframes bounceInUp {
-            0%, 100%, 60%, 75%, 90% {
-                -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
-                transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
-            }
-            0% {
-                opacity: 0;
-                -webkit-transform: translate3d(0, 3000px, 0);
-                transform: translate3d(0, 3000px, 0)
-            }
-            60% {
-                opacity: 1;
-                -webkit-transform: translate3d(0, -20px, 0);
-                transform: translate3d(0, -20px, 0)
-            }
-            75% {
-                -webkit-transform: translate3d(0, 10px, 0);
-                transform: translate3d(0, 10px, 0)
-            }
-            90% {
-                -webkit-transform: translate3d(0, -5px, 0);
-                transform: translate3d(0, -5px, 0)
-            }
-            100% {
-                -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0)
-            }
-        }
-
-        @keyframes bounceInUp {
-            0%, 100%, 60%, 75%, 90% {
-                -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
-                transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
-            }
-            0% {
-                opacity: 0;
-                -webkit-transform: translate3d(0, 3000px, 0);
-                -ms-transform: translate3d(0, 3000px, 0);
-                transform: translate3d(0, 3000px, 0)
-            }
-            60% {
-                opacity: 1;
-                -webkit-transform: translate3d(0, -20px, 0);
-                -ms-transform: translate3d(0, -20px, 0);
-                transform: translate3d(0, -20px, 0)
-            }
-            75% {
-                -webkit-transform: translate3d(0, 10px, 0);
-                -ms-transform: translate3d(0, 10px, 0);
-                transform: translate3d(0, 10px, 0)
-            }
-            90% {
-                -webkit-transform: translate3d(0, -5px, 0);
-                -ms-transform: translate3d(0, -5px, 0);
-                transform: translate3d(0, -5px, 0)
-            }
-            100% {
-                -webkit-transform: translate3d(0, 0, 0);
-                -ms-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0)
-            }
-        }
-
-        .bounceInUp {
-            -webkit-animation-name: bounceInUp;
-            animation-name: bounceInUp
-        }
-        @-webkit-keyframes zoomInLeft {
-            0% {
-                opacity: 0;
-                -webkit-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
-                transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
-                -webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
-                animation-timing-function: cubic-bezier(0.55, .055, .675, .19)
-            }
-            60% {
-                opacity: 1;
-                -webkit-transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
-                transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
-                -webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
-                animation-timing-function: cubic-bezier(0.175, .885, .32, 1)
-            }
-        }
-
-        @keyframes zoomInLeft {
-            0% {
-                opacity: 0;
-                -webkit-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
-                -ms-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
-                transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
-                -webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
-                animation-timing-function: cubic-bezier(0.55, .055, .675, .19)
-            }
-            60% {
-                opacity: 1;
-                -webkit-transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
-                -ms-transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
-                transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
-                -webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
-                animation-timing-function: cubic-bezier(0.175, .885, .32, 1)
-            }
-        }
-
-        .zoomInLeft {
-            -webkit-animation-name: zoomInLeft;
-            animation-name: zoomInLeft
-        }
-
-        @-webkit-keyframes zoomInRight {
-            0% {
-                opacity: 0;
-                -webkit-transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
-                transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
-                -webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
-                animation-timing-function: cubic-bezier(0.55, .055, .675, .19)
-            }
-            60% {
-                opacity: 1;
-                -webkit-transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
-                transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
-                -webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
-                animation-timing-function: cubic-bezier(0.175, .885, .32, 1)
-            }
-        }
-
-        @keyframes zoomInRight {
-            0% {
-                opacity: 0;
-                -webkit-transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
-                -ms-transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
-                transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
-                -webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
-                animation-timing-function: cubic-bezier(0.55, .055, .675, .19)
-            }
-            60% {
-                opacity: 1;
-                -webkit-transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
-                -ms-transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
-                transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
-                -webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
-                animation-timing-function: cubic-bezier(0.175, .885, .32, 1)
-            }
-        }
-
-        .zoomInRight {
-            -webkit-animation-name: zoomInRight;
-            animation-name: zoomInRight
-        }
-        @-webkit-keyframes bounceInUp {
-            0%, 100%, 60%, 75%, 90% {
-                -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
-                transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
-            }
-            0% {
-                opacity: 0;
-                -webkit-transform: translate3d(0, 3000px, 0);
-                transform: translate3d(0, 3000px, 0)
-            }
-            60% {
-                opacity: 1;
-                -webkit-transform: translate3d(0, -20px, 0);
-                transform: translate3d(0, -20px, 0)
-            }
-            75% {
-                -webkit-transform: translate3d(0, 10px, 0);
-                transform: translate3d(0, 10px, 0)
-            }
-            90% {
-                -webkit-transform: translate3d(0, -5px, 0);
-                transform: translate3d(0, -5px, 0)
-            }
-            100% {
-                -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0)
-            }
-        }
-
-        @keyframes bounceInUp {
-            0%, 100%, 60%, 75%, 90% {
-                -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
-                transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
-            }
-            0% {
-                opacity: 0;
-                -webkit-transform: translate3d(0, 3000px, 0);
-                -ms-transform: translate3d(0, 3000px, 0);
-                transform: translate3d(0, 3000px, 0)
-            }
-            60% {
-                opacity: 1;
-                -webkit-transform: translate3d(0, -20px, 0);
-                -ms-transform: translate3d(0, -20px, 0);
-                transform: translate3d(0, -20px, 0)
-            }
-            75% {
-                -webkit-transform: translate3d(0, 10px, 0);
-                -ms-transform: translate3d(0, 10px, 0);
-                transform: translate3d(0, 10px, 0)
-            }
-            90% {
-                -webkit-transform: translate3d(0, -5px, 0);
-                -ms-transform: translate3d(0, -5px, 0);
-                transform: translate3d(0, -5px, 0)
-            }
-            100% {
-                -webkit-transform: translate3d(0, 0, 0);
-                -ms-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0)
-            }
-        }
-
-        .bounceInUp {
-            -webkit-animation-name: bounceInUp;
-            animation-name: bounceInUp
-        }
-        @-webkit-keyframes rotateInDownLeft {
-            0% {
-                -webkit-transform-origin: left bottom;
-                transform-origin: left bottom;
-                -webkit-transform: rotate3d(0, 0, 1, -45deg);
-                transform: rotate3d(0, 0, 1, -45deg);
-                opacity: 0
-            }
-            100% {
-                -webkit-transform-origin: left bottom;
-                transform-origin: left bottom;
-                -webkit-transform: none;
-                transform: none;
-                opacity: 1
-            }
-        }
-
-        @keyframes rotateInDownLeft {
-            0% {
-                -webkit-transform-origin: left bottom;
-                -ms-transform-origin: left bottom;
-                transform-origin: left bottom;
-                -webkit-transform: rotate3d(0, 0, 1, -45deg);
-                -ms-transform: rotate3d(0, 0, 1, -45deg);
-                transform: rotate3d(0, 0, 1, -45deg);
-                opacity: 0
-            }
-            100% {
-                -webkit-transform-origin: left bottom;
-                -ms-transform-origin: left bottom;
-                transform-origin: left bottom;
-                -webkit-transform: none;
-                -ms-transform: none;
-                transform: none;
-                opacity: 1
-            }
-        }
-
-        .rotateInDownLeft {
-            -webkit-animation-name: rotateInDownLeft;
-            animation-name: rotateInDownLeft
-        }
-
-        @-webkit-keyframes rotateInDownRight {
-            0% {
-                -webkit-transform-origin: right bottom;
-                transform-origin: right bottom;
-                -webkit-transform: rotate3d(0, 0, 1, 45deg);
-                transform: rotate3d(0, 0, 1, 45deg);
-                opacity: 0
-            }
-            100% {
-                -webkit-transform-origin: right bottom;
-                transform-origin: right bottom;
-                -webkit-transform: none;
-                transform: none;
-                opacity: 1
-            }
-        }
-
-        @keyframes rotateInDownRight {
-            0% {
-                -webkit-transform-origin: right bottom;
-                -ms-transform-origin: right bottom;
-                transform-origin: right bottom;
-                -webkit-transform: rotate3d(0, 0, 1, 45deg);
-                -ms-transform: rotate3d(0, 0, 1, 45deg);
-                transform: rotate3d(0, 0, 1, 45deg);
-                opacity: 0
-            }
-            100% {
-                -webkit-transform-origin: right bottom;
-                -ms-transform-origin: right bottom;
-                transform-origin: right bottom;
-                -webkit-transform: none;
-                -ms-transform: none;
-                transform: none;
-                opacity: 1
-            }
-        }
-
-        .rotateInDownRight {
-            -webkit-animation-name: rotateInDownRight;
-            animation-name: rotateInDownRight
-        }
-        @-webkit-keyframes zoomInLeft {
-            0% {
-                opacity: 0;
-                -webkit-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
-                transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
-                -webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
-                animation-timing-function: cubic-bezier(0.55, .055, .675, .19)
-            }
-            60% {
-                opacity: 1;
-                -webkit-transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
-                transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
-                -webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
-                animation-timing-function: cubic-bezier(0.175, .885, .32, 1)
-            }
-        }
-
-        @keyframes zoomInLeft {
-            0% {
-                opacity: 0;
-                -webkit-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
-                -ms-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
-                transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
-                -webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
-                animation-timing-function: cubic-bezier(0.55, .055, .675, .19)
-            }
-            60% {
-                opacity: 1;
-                -webkit-transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
-                -ms-transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
-                transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
-                -webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
-                animation-timing-function: cubic-bezier(0.175, .885, .32, 1)
-            }
-        }
-
-        .zoomInLeft {
-            -webkit-animation-name: zoomInLeft;
-            animation-name: zoomInLeft
-        }
-
-        @-webkit-keyframes zoomInRight {
-            0% {
-                opacity: 0;
-                -webkit-transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
-                transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
-                -webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
-                animation-timing-function: cubic-bezier(0.55, .055, .675, .19)
-            }
-            60% {
-                opacity: 1;
-                -webkit-transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
-                transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
-                -webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
-                animation-timing-function: cubic-bezier(0.175, .885, .32, 1)
-            }
-        }
-
-        @keyframes zoomInRight {
-            0% {
-                opacity: 0;
-                -webkit-transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
-                -ms-transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
-                transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
-                -webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
-                animation-timing-function: cubic-bezier(0.55, .055, .675, .19)
-            }
-            60% {
-                opacity: 1;
-                -webkit-transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
-                -ms-transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
-                transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
-                -webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
-                animation-timing-function: cubic-bezier(0.175, .885, .32, 1)
-            }
-        }
-
-        .zoomInRight {
-            -webkit-animation-name: zoomInRight;
-            animation-name: zoomInRight
-        }
-
-
     </style>
 </head>
 <body class="sztjPage ">
-<nav class="navBanner">
+<nav class="navBanner hidden-xm hidden-sm">
     <section class="navBanner-main">
         <a class="logo" href="index.html"></a>
         <ul class="navList">
@@ -846,147 +333,223 @@
                 </a>
             </li>
             <li>
-                <a href="recruiting.html">
+                <a href="recruitingDetail.html">
                     <b class="b1"></b>
                     <b class="b2"></b>
                 </a>
             </li>
         </ul>
     </section>
-
 </nav>
-
+<nav class="navBanner visible-xs visible-sm">
+    <section class="navBanner-main">
+        <section></section>
+        <a class="logo" href="index.html"></a>
+        <span class="navBtn"></span>
+    </section>
+    <section class="nav-con">
+        <ul style="padding-top: 0.4rem;">
+            <li>
+                <a href="index.html">
+                    <img src="images/wapImg-18.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="academyIntroduced.html">
+                    <img src="images/wapImg-19.png" alt="">
+                </a>
+            </li>
+            <li class="active">
+                <a href="teachRecommend.html">
+                    <img src="images/wapImg-20.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="courseIntroduction.html">
+                    <img src="images/wapImg-21.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="mingzhiActivity.html">
+                    <img src="images/wapImg-22.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="mingzhiStudents.html">
+                    <img src="images/wapImg-23.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="contactUs.html">
+                    <img src="images/wapImg-24.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="recruitingDetail.html">
+                    <img src="images/wapImg-25.png" alt="">
+                </a>
+            </li>
+        </ul>
+    </section>
+</nav>
 <div class="big clearfix">
-    <ul class="frist clearfix ">
-        <li class="fristleft  animated">
-            <div class="fristtop text">古筝老师-汪梦圆</div><br/>
+    <a href="teachRecommendDetail.html?id=0">
+        <ul class="frist clearfix ">
+            <li class="fristleft tex animated mobileleft ">
+                <img class="wapimg visible-xs visible-sm" src="images/wapImg-20.png">
+                <div class="fristtop text">古筝老师-汪梦圆</div><br/>
+                <div class="fristmiddle">
+                    <q class="wen2">
+                        不可有傲气，不可无傲骨
+                    </q>
+                </div><br/>
+                <div class="wen">
+                    <p>高级教师资格证<br/>
+                        自幼习琴，曾多次获奖<br/>
+                        新人大赛民乐组优秀表演奖<br/>
+                        闪亮新星古筝组金奖等等</p>
+                </div>
+            </li>
+            <li class="fristright animated mobileright"><img src="images/wangmengyuan.png"> </li>
+
+        </ul>
+    </a>
+    <a href="teachRecommendDetail.html?id=1">
+        <ul class="two clearfix ">
+
+            <li class="twoleft animated mobileleft" ><img src="images/zhuanzhonghua.jpg"  > </li>
+
+            <li class="tworight tex animated mobileright">
+                <div class="twotop text">书画老师-庄忠华</div><br/>
+                <div class="twomiddle">
+                    <q class="wen2">骐骥一跃，不能十步,
+                        驽马十驾，功在不舍
+                    </q>
+                </div><br/>
+                <div class="wen">
+                    自幼研习国画<br/>
+                    毕业于中国画学院<br/>
+                    修习中国画三十余年<br/>
+                    从事书法修学近二十年载
+                </div>
+
+            </li>
+        </ul>
+    </a>
+    <a href="teachRecommendDetail.html?id=2">
+        <ul class="three clearfix ">
+
+            <li class="threeleft animated mobileleft tex">
+                <div class="threetop text">围棋老师-张源</div><br/>
+                <di class="threemiddle">
+                    <q class="wen2">棋雅小道，品德最尊
+                    </q>
+                </di><br/>
+                <div class="wen">
+                    业余五转，美籍华人<br/>
+                    曾在美国西雅图开办围棋培训班<br/>
+                    曾任职于美中交流理事会文化机构<br/>
+                    负责中美围棋文化交流
 
 
-            <div class="fristmiddle">
-                <q class="wen2">
-                    不可有傲气，不可无傲骨
-                </q>
-            </div><br/>
-            <div class="wen">
-                <p>高级教师资格证<br/>
-                    自幼习琴，曾多次获奖<br/>
-                    新人大赛民乐组优秀表演奖<br/>
-                    闪亮新星古筝组金奖等等</p>
-            </div>
-        </li>
-        <li class="fristright animated"><img src="images/wangmengyuan.png"> </li>
+                </div>
+            </li>
+            <li class="threeright animated mobileright"><img src="images/zhangyuan.png" > </li>
 
-    </ul>
+        </ul>
+    </a>
+    <a href="teachRecommendDetail.html?id=3">
+        <ul class="four clearfix">
 
-    <ul class="two clearfix ">
+            <li class="fourleft animated mobileleft"><img src="images/zhangrujie.png"> </li>
 
-        <li class="twoleft animated " ><img src="images/zhangyuan.png"  > </li>
+            <li class="fouright animated mobileright tex">
+                <div class="fourtop text">书法-张汝杰</div><br/>
+                <div class="fourmiddle">
+                    <q class="wen2">踏遍红尘千万朵，且以笔墨诉平生
+                    </q>
+                </div><br/>
+                <div class="wen">
+                    自幼学习书画<br/>
+                    师从李志平教授<br/>
+                    尤胜书法教学<br/>
+                    六年书法教学经验<br/>
+                    擅长楷书结体的讲解<br/>
+                    独特专业的教学方法
 
-        <li class="tworight animated">
-            <div class="twotop text">围棋老师-张源</div><br/>
-            <div class="twomiddle">
-                <q class="wen2">棋虽小道，品德最尊
-                </q>
-            </div><br/>
-            <div class="wen">
-                业余五段，美籍华人。<br/>
-                曾在美国西雅图开办围棋培训班<br/>
-                曾任职于美中交流理事会文化机构<br/>
-                负责中美围棋文化交流
-            </div>
+                </div>
+            </li>
 
-        </li>
+        </ul>
+    </a>
+    <a href="teachRecommendDetail.html?id=4">
+        <ul class="five clearfix">
 
+            <li class="fiveleft animated mobileleft tex">
+                <div class="fivetop text">国画老师-王向豪</div><br/>
+                <div class="fivemiddle">
+                    <q class="wen2">敏而好学，不耻下问</q>
+                </div><br/>
+                <div class="wen">
+                    师从孔耘<br/>
+                    杭州师范大学美术学院国画专业<br/>
+                    西湖韵当代青年篆刻组荣誉证书<br/>
+                    西湖大彩虹志愿者协会特聘教师<br/>
+                    曾保淑塔实验学院从事国画教学
+                </div>
+            </li>
+            <li class="fiveright animated mobileright">
+                <img src="images/xianghao.png"/>
+            </li>
 
-    </ul>
+        </ul>
+    </a>
+    <a href="teachRecommendDetail.html?id=5">
+        <ul class="six clearfix">
 
-    <ul class="three clearfix ">
+            <li class="sixleft animated mobileleft" ><img src="images/zhenganqing.png" ></li>
+            <li class="sixright animated mobileright tex" >
+                <div class="sixtop text">国学老师-郑岸青</div><br/>
+                <div class="sixmiddle">
+                    <q class="wen2">积一时之硅步，至千里之遥程
+                    </q>
+                </div><br/>
+                <div class="wen">
+                    高级老师资格证<br/>
+                    从事少儿教育四年，熟悉少儿心理学<br/>
+                    幼儿蒙学方面主教《弟子规》、《三字经》、《拼音》、《识字》等
+                </div>
+            </li>
 
-        <li class="threeleft animated">
-            <div class="threetop text">书法老师-张汝杰</div><br/>
-            <di class="threemiddle">
-                <q class="wen2">踏遍红尘千万朵，且以笔墨诉平生
-                </q>
-            </di><br/>
-            <div class="wen">
-                自幼学习书画<br/>
-                师从李志平教授<br/>
-                尤胜书法教学<br/>
-                六年书法教学经验<br/>
-                擅长楷书结体的讲解<br/>
-                独特专业的教学方法
+        </ul>
+    </a>
+    <a href="teachRecommendDetail.html?id=6">
+        <ul class="lest clearfix">
 
-            </div>
-        </li>
-        <li class="threeright animated"><img src="images/zhangrujie.png" > </li>
+            <li class="lestleft animated mobileleft tex">
+                <div class="lesttop text">茶艺老师-李桂兰</div><br/>
+                <div class="lestmiddle">
+                    <q class="wen2">路漫漫其修远兮，吾将上下而求索</q>
+                </div><br/>
+                <div class="wen">
+                    国家高级茶艺师<br/>
+                    从事茶文化传播四载有余<br/>
+                    华南农业大赛银奖学茶学专业<br/>
+                    荣获广东茶艺技能大赛银奖
 
-    </ul>
+                </div>
+            </li>
+            <li class="lestright animated mobileright">
+                <img src="images/liguilang.png"/>
+            </li>
 
-
-    <ul class="four clearfix">
-
-        <li class="fourleft animated"><img src="images/xianghao.png"> </li>
-
-        <li class="fouright animated">
-            <div class="fourtop text">国画老师-王向豪</div><br/>
-            <div class="fourmiddle">
-                <q class="wen2">敏而好学，不耻下问
-                </q>
-            </div><br/>
-            <div class="wen">
-                师从孔耘<br/>
-                杭州师范大学美术学院国画专业<br/>
-                西湖韵当代青年篆刻组荣誉证书<br/>
-                西湖大彩虹志愿者协会特聘教师<br/>
-                曾保淑塔实验学院从事国画教学
-            </div>
-        </li>
-
-    </ul>
-
-
-    <ul class="five clearfix">
-
-        <li class="fiveleft animated">
-            <div class="fivetop text">国学老师-郑岸青</div><br/>
-            <div class="fivemiddle">
-                <q class="wen2">积一时之硅步，至千里之遥程</q>
-            </div><br/>
-            <div class="wen">
-                高级老师资格证<br/>
-                从事少儿教育四年，熟悉少儿心理学<br/>
-                幼儿蒙学方面主教《弟子规》、《三字经》、《拼音》、《识字》等
-            </div>
-        </li>
-        <li class="fiveright animated">
-            <img src="images/zhenganqing.png"/>
-        </li>
-
-    </ul>
-
-
-    <ul class="six clearfix">
-
-        <li class="sixleft animated" ><img src="images/liguilang.png" ></li>
-        <li class="sixright animated" >
-            <div class="sixtop text">茶艺老师-李桂兰</div><br/>
-            <div class="sixmiddle">
-                <q class="wen2">路漫漫其修远兮，吾将上下而求索
-                </q>
-            </div><br/>
-            <div class="wen">
-                国家高级茶艺师<br/>
-                从事茶文化传播四载有余<br/>
-                华南农业大赛银奖学茶学专业<br/>
-                荣获广东茶艺技能大赛银奖
-            </div>
-        </li>
-
-    </ul>
+        </ul>
+    </a>
     <div class="seven">
-        <div class="seventop" clearfix>
+        <!--<div class="seventop" clearfix>-->
             <div class=" seven1"  >
-                <img src="images/lutianeTeacher.png" >
+                <img class="hidden-xm hidden-sm" src="images/lutianeTeacher.png" >
+                <img class="visible-xs visible-sm" src="images/lutiane.jpg" >
                 <a href="teachRecommendDetail.html?id=7">
                     <div class="bmbox">
                         <span class="wen1">书法老师</span><br/>
@@ -997,8 +560,9 @@
                 </a>
 
             </div>
-            <div class=" seven1" >
-                <img src="images/zhuangzhonghuaTeacher.png" >
+            <div class=" seven1 hidden-xm hidden-sm" >
+                <img class="hidden-xm hidden-sm"  src="images/zhuangzhonghuaTeacher.png" >
+                <img class="visible-xs visible-sm" src="images/zhuangzhonghuaTeacher.png" >
                 <a href="teachRecommendDetail.html?id=1">
                     <div class="bmbox">
                         <span class="wen1">书画老师</span><br/>
@@ -1013,7 +577,8 @@
 
             </div>
             <div class=" seven1"  >
-                <img src="images/dongqiTeacher.png" >
+                <img class="hidden-xm hidden-sm"  src="images/dongqiTeacher.png" >
+                <img class="visible-xs visible-sm" src="images/dongqiTeacher1.jpg" >
                 <a href="teachRecommendDetail.html?id=9">
                     <div class="bmbox">
                         <span class="wen1">围棋老师</span><br/>
@@ -1024,10 +589,11 @@
                 </a>
 
             </div>
-        </div>
-        <div class="seventop" clearfix>
+        <!--</div>-->
+        <!--<div class="seventop" clearfix>-->
             <div class=" seven1"  >
-                <img src="images/wuyananTeacher.png" >
+                <img class="hidden-xm hidden-sm"   src="images/wuyananTeacher.png" >
+                <img class="visible-xs visible-sm" src="images/wuyanang1.jpg" >
                 <a href="teachRecommendDetail.html?id=10">
                     <div class="bmbox">
                         <span class="wen1">茶艺老师</span><br/>
@@ -1039,7 +605,8 @@
 
             </div>
             <div class=" seven1" >
-                <img src="images/fengzhigangTeacher.png" >
+                <img class="hidden-xm hidden-sm"   src="images/fengzhigangTeacher.png" >
+                <img class="visible-xs visible-sm" src="images/fengzhigang1.jpg" >
                 <a href="teachRecommendDetail.html?id=8">
                     <div class="bmbox">
                         <span class="wen1">书法老师</span><br/>
@@ -1051,7 +618,8 @@
 
             </div>
             <div class=" seven1"  >
-                <img src="images/wujingjingTeacher.png" >
+                <img class="hidden-xm hidden-sm"   src="images/wujingjingTeacher.png" >
+                <img class="visible-xs visible-sm" src="images/wuqingqing1.jpg" >
                 <a href="teachRecommendDetail.html?id=11">
                     <div class="bmbox">
                         <span class="wen1">国画老师</span><br/>
@@ -1062,7 +630,7 @@
                 </a>
 
             </div>
-        </div>
+        <!--</div>-->
 
 
     </div>
@@ -1084,26 +652,30 @@
 
 </div>
 </body>
-<script src="js/jquery-2.2.0.min.js"></script>
+<script src="js/common.js"></script>
 <script>
-    function ani(claname,type1,type2){
-        if(($("."+claname).offset().top - $(window).scrollTop())<$(window).height()){
-            $("."+claname).find("li").eq(0).addClass(type1);
-            $("."+claname).find("li").eq(1).addClass(type2);
-        };
-        $(window).scroll(function(){
+    $(function(){
+        function ani(claname,type1,type2){
             if(($("."+claname).offset().top - $(window).scrollTop())<$(window).height()){
                 $("."+claname).find("li").eq(0).addClass(type1);
                 $("."+claname).find("li").eq(1).addClass(type2);
             };
-        });
+            $(window).scroll(function(){
+                if(($("."+claname).offset().top - $(window).scrollTop())<$(window).height()){
+                    $("."+claname).find("li").eq(0).addClass(type1);
+                    $("."+claname).find("li").eq(1).addClass(type2);
+                };
+            });
 
-    };
-    ani("frist","bounceInLeft ","bounceInRight");
-    ani("two"," bounceInUp"," bounceInUp");
-    ani("three","zoomInLeft","zoomInRight");
-    ani("four","bounceInUp","bounceInUp");
-    ani("five","rotateInDownLeft","rotateInDownRight");
-    ani("six","zoomInLeft","zoomInRight");
+        };
+        ani("frist","zoomInLeft ","zoomInLeft");
+        ani("two"," bounceInUp"," bounceInUp");
+        ani("three","zoomInLeft","zoomInLeft");
+        ani("four","bounceInUp","bounceInUp");
+        ani("five","rotateInDownLeft","rotateInDownLeft");
+        ani("six","zoomInLeft","zoomInLeft");
+        ani("lest","zoomInRight","zoomInRight");
+    })
+
 </script>
 </html>

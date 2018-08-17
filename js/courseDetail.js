@@ -21,6 +21,7 @@ $(function(){
             details: [
                 {
                     imgUrl:'images/guzhengBg.png',
+                    imgUrlM:'images/wapImg-11.png',
                     introCon:[
                         {
                             title:'古筝简介',
@@ -55,6 +56,7 @@ $(function(){
 
                 {
                     imgUrl:'images/weiqiBg.png',
+                    imgUrlM:'images/wapImg-12.png',
                     introCon:[
                         {
                             title:'何为围棋？',
@@ -99,6 +101,7 @@ $(function(){
                 },
                 {
                     imgUrl:'images/shufaBg.png',
+                    imgUrlM:'images/wapImg-13.png',
                     introCon:[
                         {
                             title:'何为书法？',
@@ -137,6 +140,7 @@ $(function(){
                 },
                 {
                     imgUrl:'images/guohuaBg.png',
+                    imgUrlM:'images/wapImg-14.png',
                     introCon:[
                         {
                             title:'国画',
@@ -177,6 +181,7 @@ $(function(){
                 },
                 {
                     imgUrl:'images/guoxueBg.png',
+                    imgUrlM:'images/wapImg-15.png',
                     introCon:[
                         {
                             title:'何为国学？',
@@ -213,6 +218,7 @@ $(function(){
                 },
                 {
                     imgUrl:'images/chayiBg.png',
+                    imgUrlM:'images/wapImg-16.png',
                     introCon:[
                         {
                             title:'何为茶艺？',

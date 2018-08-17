@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/welcome.css">
     <link rel="icon" href="images/bitbug_favicon.ico" >
+    <link rel="stylesheet" href="css/Bootstrap.css">
+    <script src="js/rem.js"></script>
     <style>
 
         .teacherTab{
@@ -66,7 +68,7 @@
     </style>
 </head>
 <body class="teachRecommendDetail">
-<nav class="navBanner">
+<nav class="navBanner hidden-xm hidden-sm">
     <section class="navBanner-main">
         <a class="logo" href="index.html"></a>
         <ul class="navList">
@@ -122,13 +124,66 @@
     </section>
 
 </nav>
+<nav class="navBanner visible-xs visible-sm">
+    <section class="navBanner-main">
+        <section></section>
+        <a class="logo" href="index.html"></a>
+        <span class="navBtn"></span>
+    </section>
+    <section class="nav-con">
+        <ul style="padding-top: 0.4rem;">
+            <li>
+                <a href="index.html">
+                    <img src="images/wapImg-18.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="academyIntroduced.html">
+                    <img src="images/wapImg-19.png" alt="">
+                </a>
+            </li>
+            <li class="active">
+                <a href="teachRecommend.html">
+                    <img src="images/wapImg-20.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="courseIntroduction.html">
+                    <img src="images/wapImg-21.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="mingzhiActivity.html">
+                    <img src="images/wapImg-22.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="mingzhiStudents.html">
+                    <img src="images/wapImg-23.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="contactUs.html">
+                    <img src="images/wapImg-24.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="recruitingDetail.html">
+                    <img src="images/wapImg-25.png" alt="">
+                </a>
+            </li>
+        </ul>
+    </section>
+</nav>
 <section class="teachRecommendDetail-main"  id="teachRecommendDetail">
-    <nav class="teacherTab">
+    <nav class="teacherTab hidden-xm hidden-sm">
         <h5>师资推荐</h5>
         <ul>
             <li v-for="(item,index) in names" :class="{active:index == num}" @click="tab(index)">{{item}}</li>
         </ul>
     </nav>
+    <img class=" visible-xs visible-sm" src="images/wapImg-20.png" alt="" style="position: absolute; top:1.8rem;left:0.5rem;">
+
     <section class="teacher-info" v-for='(itemCon,index) in details' v-show=" index == num">
         <img class="teacherImg" v-bind:src="itemCon.imgUrl" alt=""wi>
         <section class="teacher-info-text">
@@ -156,5 +211,6 @@
 </body>
 <script src="js/jquery-2.2.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<script src="js/common.js"></script>
 <script src="js/teachRecommendDetail.js"></script>
 </html>

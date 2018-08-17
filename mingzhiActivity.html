@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="css/welcome.css">
     <script src="js/jquery-2.2.0.min.js"></script>
     <link rel="icon" href="images/bitbug_favicon.ico" >
+    <link rel="stylesheet" href="css/Bootstrap.css">
+    <script src="js/rem.js"></script>
     <style>
 
     </style>
 </head>
-<body>
-<nav class="navBanner">
+<body class="mingzhiActivityPage">
+<nav class="navBanner  hidden-xm hidden-sm">
     <section class="navBanner-main">
         <a class="logo" href="index.html"></a>
         <ul class="navList">
@@ -68,8 +70,60 @@
     </section>
 
 </nav>
+<nav class="navBanner visible-xs visible-sm">
+    <section class="navBanner-main">
+        <section></section>
+        <a class="logo" href="index.html"></a>
+        <span class="navBtn"></span>
+    </section>
+    <section class="nav-con">
+        <ul style="padding-top: 0.4rem;">
+            <li>
+                <a href="index.html">
+                    <img src="images/wapImg-18.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="academyIntroduced.html">
+                    <img src="images/wapImg-19.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="teachRecommend.html">
+                    <img src="images/wapImg-20.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="courseIntroduction.html">
+                    <img src="images/wapImg-21.png" alt="">
+                </a>
+            </li>
+            <li class="active">
+                <a href="mingzhiActivity.html">
+                    <img src="images/wapImg-22.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="mingzhiStudents.html">
+                    <img src="images/wapImg-23.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="contactUs.html">
+                    <img src="images/wapImg-24.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="recruitingDetail.html">
+                    <img src="images/wapImg-25.png" alt="">
+                </a>
+            </li>
+        </ul>
+    </section>
+</nav>
 <div class="clear">
-    <img src="images/imgtop.jpg" width="100%">
+    <img class="hidden-xm hidden-sm" src="images/imgtop.jpg" width="100%">
+    <img class="visible-xs visible-sm" src="images/wapImg-26.png" width="100%">
 </div>
 <section class="activityList">
     <section class="activityList-main">
@@ -98,5 +152,5 @@
 
 </div>
 </body>
-
+<script src="js/common.js"></script>
 </html>

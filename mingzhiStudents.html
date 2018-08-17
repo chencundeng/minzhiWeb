@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="css/welcome.css">
     <link rel="stylesheet" href="css/mingzhi3.css" type="text/css">
     <link rel="icon" href="images/bitbug_favicon.ico" >
-
+    <link rel="stylesheet" href="css/Bootstrap.css">
+    <script src="js/rem.js"></script>
 </head>
 <body >
-<nav class="navBanner">
+<nav class="navBanner hidden-xm hidden-sm">
     <section class="navBanner-main">
         <a class="logo" href="index.html"></a>
         <ul class="navList">
@@ -66,6 +67,57 @@
     </section>
 
 </nav>
+<nav class="navBanner visible-xs visible-sm">
+    <section class="navBanner-main">
+        <section></section>
+        <a class="logo" href="index.html"></a>
+        <span class="navBtn"></span>
+    </section>
+    <section class="nav-con">
+        <ul style="padding-top: 0.4rem;">
+            <li>
+                <a href="index.html">
+                    <img src="images/wapImg-18.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="academyIntroduced.html">
+                    <img src="images/wapImg-19.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="teachRecommend.html">
+                    <img src="images/wapImg-20.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="courseIntroduction.html">
+                    <img src="images/wapImg-21.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="mingzhiActivity.html">
+                    <img src="images/wapImg-22.png" alt="">
+                </a>
+            </li>
+            <li class="active">
+                <a href="mingzhiStudents.html">
+                    <img src="images/wapImg-23.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="contactUs.html">
+                    <img src="images/wapImg-24.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="recruitingDetail.html">
+                    <img src="images/wapImg-25.png" alt="">
+                </a>
+            </li>
+        </ul>
+    </section>
+</nav>
 <div class="bigbox clear">
     <div class="frist box1 clear  ">
         <a href="studentDetail.html?id=0">
@@ -75,7 +127,7 @@
             <div class="fristrightimg   ">
 
             </div>
-            <ul class="panel  ">
+            <ul class="panel1">
 
                 <li>王陈馨嘉</li>
                 <li>课程：书法</li>
@@ -88,7 +140,7 @@
         <a href="studentDetail.html?id=1">
             <div class="secondleftimg   "></div>
             <div class="secondrightimg  "></div>
-            <ul class="panel animated ">
+            <ul class="panel1 animated ">
 
                 <li>王弈辰</li>
                 <li>课程：国画</li>
@@ -101,7 +153,7 @@
         <a href="studentDetail.html?id=2">
             <div class="thirdleftimg "></div>
             <div class="thirdrightimg "></div>
-            <ul class="panel animated ">
+            <ul class="panel1 animated ">
 
                 <li>崔智杰</li>
                 <li>课程：蒙学</li>
@@ -126,4 +178,6 @@
 
 </div>
 </body>
+<script src="js/jquery-2.2.0.min.js"></script>
+<script src="js/common.js"></script>
 </html>

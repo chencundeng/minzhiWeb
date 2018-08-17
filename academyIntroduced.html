@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/welcome.css">
     <link rel="icon" href="images/bitbug_favicon.ico" >
+    <link rel="stylesheet" href="css/Bootstrap.css">
+    <script src="js/rem.js"></script>
     <title>书院介绍</title>
     <style>
 
@@ -25,23 +27,14 @@
             text-indent: 2em;
             margin: 15px;
         }
-        a{
-            text-decoration:none;
-            display: inline-block;
-            color: #FFFFFF;
-
-
-        }
-
 
         .frist,.third{
-
             background-size: 100%;
             background-repeat: no-repeat;
             position: relative;
             font-size: 0;
-
         }
+
         .one,.three {
             width:65%;
             background: rgba(155, 145, 139,0.7);
@@ -56,12 +49,6 @@
 
 
         }
-
-        /*.one ,.three{*/
-
-            /*transform:rotateY(40deg);*/
-
-        /*}*/
 
         .shu,.lu{
             display: inline-block;
@@ -110,11 +97,6 @@
 
 
         }
-        /*.two{*/
-
-            /*transform:rotatey(40deg);*/
-
-        /*}*/
         .ming{
             margin-left: 5%;
             border:solid 2px #FFFFFF;
@@ -164,11 +146,57 @@
             margin-top: 3px;
 
         }
-
+        @media (max-width: 991px) and (min-width: 768px){
+            .frist{
+                margin-top: 1.5rem;
+                position: static;
+            }
+            .one,.three,.two{
+                width: 100%;
+                background: #fff;
+                position: static;
+            }
+            .text,.biao{
+                width: 100%;
+                margin:0;
+            }
+            .title span{
+                display: inline-block;
+                font-size: 30px;
+                background: #9c8378;
+                padding: 0.1rem 0.3rem;
+                margin: 0.3rem 0.6rem 0.1rem;
+                border-radius: 0.1rem;
+                color: #fff;
+            }
+            .text p{
+                color: #9c8378;
+                font-size: 0.24rem;
+                line-height: 0.4rem;
+                margin: 0.2rem 0.25rem;
+            }
+            .biao li{
+                padding: 0 0.6rem;
+                line-height: 0.35rem;
+            }
+            .biao li a{
+                color: #9c8378;
+                font-size: 0.24rem;
+            }
+            .number{
+                width: auto;
+                height: auto;
+                color: #9c8378;
+                font-size: 0.24rem;
+            }
+            .second,.third{
+                margin-top: 0.2rem;
+            }
+        }
     </style>
 </head>
 <body>
-<nav class="navBanner">
+<nav class="navBanner hidden-xm hidden-sm">
     <section class="navBanner-main">
         <a class="logo" href="index.html"></a>
         <ul class="navList">
@@ -222,16 +250,69 @@
             </li>
         </ul>
     </section>
-
 </nav>
-<div class="frist"><img src="images/mingzhijieshao-img1.jpg" width="100%" />
+<nav class="navBanner visible-xs visible-sm">
+    <section class="navBanner-main">
+        <section></section>
+        <a class="logo" href="index.html"></a>
+        <span class="navBtn"></span>
+    </section>
+    <section class="nav-con">
+        <ul style="padding-top: 0.4rem;">
+            <li>
+                <a href="index.html">
+                    <img src="images/wapImg-18.png" alt="">
+                </a>
+            </li>
+            <li class="active">
+                <a href="academyIntroduced.html">
+                    <img src="images/wapImg-19.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="teachRecommend.html">
+                    <img src="images/wapImg-20.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="courseIntroduction.html">
+                    <img src="images/wapImg-21.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="mingzhiActivity.html">
+                    <img src="images/wapImg-22.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="mingzhiStudents.html">
+                    <img src="images/wapImg-23.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="contactUs.html">
+                    <img src="images/wapImg-24.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="recruitingDetail.html">
+                    <img src="images/wapImg-25.png" alt="">
+                </a>
+            </li>
+        </ul>
+    </section>
+</nav>
+<div class="frist">
+    <img class="hidden-xm hidden-sm" src="images/mingzhijieshao-img1.jpg" width="100%" />
+    <img class="visible-xs visible-sm" src="images/wapImg-01.png" width="100%" />
     <div class="one">
-        <div class="shu"  >
+        <div class="shu hidden-xm hidden-sm">
             書<br/>
             院<br/>
             簡<br/>
             介<br/>
         </div>
+        <div class="title visible-xs visible-sm"><span>書院簡介</span></div>
         <div class="text">
             <p >杭州日新教育咨询有限公司旗下创办的明志书院是一家以传承、弘扬中华传统文化为特色的民营幼儿及青少年教育机构。
             </p><br/><br/>
@@ -245,15 +326,19 @@
     </div>
 </div >
 
-<div class="second"><img src="images/mingzhijieshao-img2.jpg" width="100%"  />
+<div class="second">
+    <img class="hidden-xm hidden-sm" src="images/mingzhijieshao-img2.jpg" width="100%"  />
+    <img class="visible-xs visible-sm" src="images/wapImg-02.png" width="100%" />
     <div class="two">
-        <div class="ming">
+        <div class="ming hidden-xm hidden-sm">
             明<br/>
             志<br/>
             文<br/>
             化<br/>
         </div>
-        <div class="wen">
+        <div class="title visible-xs visible-sm"><span>明志文化</span></div>
+
+        <div class="text">
             <p >中国有博大精深的优秀传统文化。它能“增强做中国人的骨气和底气”，是我们最深厚的文化软实力，是我们文化发展的母体，积淀着中华民族最深沉的精神追求。
             </p><br/><br/>
             <p>“自强不息”的奋斗精神，“精忠报国”的爱国情怀，“天下兴亡，匹夫有责”的担当意识，“革故鼎新”的创新思想，“扶危济困”的公德意识，“国而忘家，公而忘私”的价值理念等，一直是我们奋发进取的精神动力。 ”欲人勿疑，必先自信“ 只有对自己的文化有坚定的信心，才能获得坚持坚守的从容，鼓起奋发进取的勇气，焕发创新创造的活力。
@@ -264,14 +349,17 @@
     </div>
 </div>
 
-<div class="third"><img src="images/mingzhijieshao-img3.jpg" width="100%" />
+<div class="third">
+    <img class="hidden-xm hidden-sm" src="images/mingzhijieshao-img3.jpg" width="100%" />
+    <img class="visible-xs visible-sm" src="images/wapImg-03.png" width="100%" />
     <div class="three">
-        <div class="lu">
+        <div class="lu hidden-xm hidden-sm">
             明<br/>
             志<br/>
             之<br/>
             路<br/>
         </div>
+        <div class="title visible-xs visible-sm"><span>明志之路</span></div>
         <ul class="biao">
             <li>
                 <span class="number">2016.5</span>
@@ -348,4 +436,6 @@
 
 </div>
 </body>
+<script src="js/jquery-2.2.0.min.js"></script>
+<script src="js/common.js"></script>
 </html>

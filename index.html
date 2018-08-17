@@ -9,6 +9,8 @@
     <script src="js/jquery.mChange.zoom.js"></script>
     <script src="js/jquery.transit.min.js"></script>
     <link rel="icon" href="images/bitbug_favicon.ico" >
+    <link rel="stylesheet" href="css/Bootstrap.css">
+    <script src="js/rem.js"></script>
     <style>
         .sroll .focus {
             margin-bottom: 26px;
@@ -66,112 +68,168 @@
     </style>
 </head>
 <body class="indexPage">
-    <nav class="navBanner">
-        <section class="navBanner-main">
-            <a class="logo" href="index.html"></a>
-            <ul class="navList">
-                <li class="active">
-                    <a href="index.html">
-                        <b class="b1"></b>
-                        <b class="b2"></b>
-                    </a>
+<nav class="navBanner hidden-xm hidden-sm">
+    <section class="navBanner-main">
+        <a class="logo" href="index.html"></a>
+        <ul class="navList">
+            <li class="active">
+                <a href="index.html">
+                    <b class="b1"></b>
+                    <b class="b2"></b>
+                </a>
+            </li>
+            <li>
+                <a href="academyIntroduced.html">
+                    <b class="b1"></b>
+                    <b class="b2"></b>
+                </a>
+            </li>
+            <li>
+                <a href="teachRecommend.html">
+                    <b class="b1"></b>
+                    <b class="b2"></b>
+                </a>
+            </li>
+            <li>
+                <a href="courseIntroduction.html">
+                    <b class="b1"></b>
+                    <b class="b2"></b>
+                </a>
+            </li>
+            <li>
+                <a href="mingzhiActivity.html">
+                    <b class="b1"></b>
+                    <b class="b2"></b>
+                </a>
+            </li>
+            <li>
+                <a href="mingzhiStudents.html">
+                    <b class="b1"></b>
+                    <b class="b2"></b>
+                </a>
+            </li>
+            <li>
+                <a href="contactUs.html">
+                    <b class="b1"></b>
+                    <b class="b2"></b>
+                </a>
+            </li>
+            <li>
+                <a href="recruitingDetail.html">
+                    <b class="b1"></b>
+                    <b class="b2"></b>
+                </a>
+            </li>
+        </ul>
+    </section>
+</nav>
+<nav class="navBanner visible-xs visible-sm">
+    <section class="navBanner-main">
+        <section></section>
+        <a class="logo" href="index.html"></a>
+        <span class="navBtn"></span>
+    </section>
+    <section class="nav-con">
+        <ul style="padding-top: 0.4rem;">
+            <li class="active">
+                <a href="index.html">
+                    <img src="images/wapImg-18.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="academyIntroduced.html">
+                    <img src="images/wapImg-19.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="teachRecommend.html">
+                    <img src="images/wapImg-20.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="courseIntroduction.html">
+                    <img src="images/wapImg-21.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="mingzhiActivity.html">
+                    <img src="images/wapImg-22.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="mingzhiStudents.html">
+                    <img src="images/wapImg-23.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="contactUs.html">
+                    <img src="images/wapImg-24.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="recruitingDetail.html">
+                    <img src="images/wapImg-25.png" alt="">
+                </a>
+            </li>
+        </ul>
+    </section>
+</nav>
+<section class="sroll">
+    <div class="focus" style="height: 486px;">
+        <div>
+            <a id="wrap-banner" href="javascript:void(0);"></a>
+            <ul>
+                <li class="s" style="transform: scale(1, 1); opacity: 1; z-index: 0; transition: opacity 800ms cubic-bezier(0, 1, 1, 1) 0s, transform 800ms cubic-bezier(0, 1, 1, 1) 0s, z-index 800ms cubic-bezier(0, 1, 1, 1) 0s;">
+                    <a class="hidden-xm hidden-sm" href="javascript:void(0);" data-href="javascript:void(0);" style="background:url(images/indexScroll01.jpg) no-repeat center;background-size:80%;"></a>
+                    <a class="visible-xs visible-sm" href="javascript:void(0);" data-href="javascript:void(0);" style="background:url(images/wapImg-04.png) no-repeat center;background-size:100%;"></a>
                 </li>
-                <li>
-                    <a href="academyIntroduced.html">
-                        <b class="b1"></b>
-                        <b class="b2"></b>
-                    </a>
+                <li style="transform: scale(1, 1); opacity: 0; z-index: -1;" class="">
+                    <a class="hidden-xm hidden-sm" href="javascript:void(0);" data-href="auditions.html" style="background:url(images/indexScroll02.jpg) no-repeat center;background-size:auto 100%;"></a>
+                    <a class="visible-xs visible-sm" href="javascript:void(0);" data-href="auditions.html" style="background:url(images/wapImg-05.png) no-repeat center;background-size:auto 100%;"></a>
                 </li>
-                <li>
-                    <a href="teachRecommend.html">
-                        <b class="b1"></b>
-                        <b class="b2"></b>
-                    </a>
-                </li>
-                <li>
-                    <a href="courseIntroduction.html">
-                        <b class="b1"></b>
-                        <b class="b2"></b>
-                    </a>
-                </li>
-                <li>
-                    <a href="mingzhiActivity.html">
-                        <b class="b1"></b>
-                        <b class="b2"></b>
-                    </a>
-                </li>
-                <li>
-                    <a href="mingzhiStudents.html">
-                        <b class="b1"></b>
-                        <b class="b2"></b>
-                    </a>
-                </li>
-                <li>
-                    <a href="contactUs.html">
-                        <b class="b1"></b>
-                        <b class="b2"></b>
-                    </a>
-                </li>
-                <li>
-                    <a href="recruiting.html">
-                        <b class="b1"></b>
-                        <b class="b2"></b>
-                    </a>
+                <li style="transform: scale(1.5, 1.5); opacity: 0; z-index: 0; transition: opacity 1000ms cubic-bezier(0.5, 0, 0.2, 1) 0s, transform 1000ms cubic-bezier(0.5, 0, 0.2, 1) 0s;" class="">
+                    <a class="hidden-xm hidden-sm" href="javascript:void(0);" data-href="http://www.dpm.org.cn/collection/embroider/246078.html" style="background:url(images/indexScroll03.jpg) no-repeat center;background-size:80%;"></a>
+                    <a class="visible-xs visible-sm" href="javascript:void(0);" data-href="http://www.dpm.org.cn/collection/embroider/246078.html" style="background:url(images/wapImg-09.png) no-repeat center;background-size:100%;"></a>
                 </li>
             </ul>
-        </section>
-
-    </nav>
-    <section class="sroll">
-        <div class="focus" style="height: 486px;">
-            <div>
-                <a id="wrap-banner" href="javascript:void(0);"></a>
-                <ul>
-                    <li class="s" style="transform: scale(1, 1); opacity: 1; z-index: 0; transition: opacity 800ms cubic-bezier(0, 1, 1, 1) 0s, transform 800ms cubic-bezier(0, 1, 1, 1) 0s, z-index 800ms cubic-bezier(0, 1, 1, 1) 0s;">
-                        <a href="javascript:void(0);" data-href="javascript:void(0);" style="background:url(images/indexScroll01.jpg) no-repeat center;background-size:80%;"></a>
-                    </li>
-                    <li style="transform: scale(1, 1); opacity: 0; z-index: -1;" class="">
-                        <a href="javascript:void(0);" data-href="auditions.html" style="background:url(images/indexScroll02.jpg) no-repeat center;background-size:auto 100%;"></a>
-                    </li>
-                    <li style="transform: scale(1.5, 1.5); opacity: 0; z-index: 0; transition: opacity 1000ms cubic-bezier(0.5, 0, 0.2, 1) 0s, transform 1000ms cubic-bezier(0.5, 0, 0.2, 1) 0s;" class="">
-                        <a href="javascript:void(0);" data-href="http://www.dpm.org.cn/collection/embroider/246078.html" style="background:url(images/indexScroll03.jpg) no-repeat center;background-size:80%;"></a>
-                    </li>
-                </ul>
-                <div class="nav">
-                    <i class="now"></i><i class=""></i><i class=""></i></div>
-                <script>
-                    $('.focus .widget-area-edit,.focus .widget-area-notice').css({"top":"91px"});
-                    $('.home .focus ul a').click(function(){
-                        var flag = false;
-                        $('.home .focus ul li').each(function(i, e){
-                            if( $(e).hasClass('s')) {
-                                var link = $(e).find('a').attr('data-href');
-                                dplus.track("焦点图",{"名称":"首页焦点图", "链接地址":link});
-                                if ( link != "" && link != "javascript:;" && link != "javascript:void(0);" ) {
-                                    //$(e).find('a').attr('href', link).attr('target', '_blank').trigger('click');
-                                    //window.open(link);
-                                    $('.home .focus ul a').attr('href', link).attr('target', '_blank');
-                                    flag = true;
-                                }
-                                else {
-                                    $('.home .focus ul a').attr('href', 'javascript:void(0);').attr('target', '_self');
-                                }
+            <div class="nav">
+                <i class="now"></i><i class=""></i><i class=""></i></div>
+            <script>
+                $('.focus .widget-area-edit,.focus .widget-area-notice').css({"top":"91px"});
+                $('.home .focus ul a').click(function(){
+                    var flag = false;
+                    $('.home .focus ul li').each(function(i, e){
+                        if( $(e).hasClass('s')) {
+                            var link = $(e).find('a').attr('data-href');
+                            dplus.track("焦点图",{"名称":"首页焦点图", "链接地址":link});
+                            if ( link != "" && link != "javascript:;" && link != "javascript:void(0);" ) {
+                                //$(e).find('a').attr('href', link).attr('target', '_blank').trigger('click');
+                                //window.open(link);
+                                $('.home .focus ul a').attr('href', link).attr('target', '_blank');
+                                flag = true;
                             }
-                        })
+                            else {
+                                $('.home .focus ul a').attr('href', 'javascript:void(0);').attr('target', '_self');
+                            }
+                        }
+                    })
 
-                        return flag;
-                    });
-                </script>
-            </div>
-            <div class="prev"><a href="javascript:;"></a></div>
-            <div class="next"><a href="javascript:;"></a></div>
+                    return flag;
+                });
+            </script>
         </div>
-    </section>
+        <div class="prev"><a href="javascript:;"></a></div>
+        <div class="next"><a href="javascript:;"></a></div>
+    </div>
+</section>
 
     <section class="floor1">
         <section class="floor1-inner">
             <section class="floor1-l">
-                <a href="academyIntroduced.html"><img src="images/indexSYJS.png" alt=""></a>
+                <a href="academyIntroduced.html">
+                    <img class="hidden-xm hidden-sm" src="images/indexSYJS.png" alt="">
+                    <img class="visible-xs visible-sm" src="images/wapImg-06.png" alt="">
+                </a>
             </section>
             <section class="floor1-r">
                 <img src="images/indexSZTJ.png" alt="">
@@ -189,7 +247,10 @@
     <section class="floor2">
         <section class="floor2-inner">
             <section class="floor2-l">
-                <a href="courseIntroduction.html"><img src="images/indexKCJS.jpg" alt=""width="100%" ></a>
+                <a href="courseIntroduction.html">
+                    <img class="hidden-xm hidden-sm" src="images/indexKCJS.jpg" alt=""width="100%" >
+                    <img class="visible-xs visible-sm" src="images/wapImg-08.png" alt=""width="100%" >
+                </a>
             </section>
             <section class="floor2-r">
                 <section class="main-left">
@@ -205,8 +266,21 @@
             </section>
         </section>
     </section>
-</body>
+<div class="frouth">
+    <ul class="frou">
+        <li><strong>钱江学堂</strong></li>
+        <li>0571-85186096</li>
+        <li>杭州市上城区中豪·望江国际1号楼3楼</li><br/>
+        <li><strong>西溪学堂</strong></li>
+        <li>0571-87248006</li>
+        <li>杭州市西湖区西溪银泰3号楼北楼113-114</li><br/>
+        <li>COPYRIGHT©2018 杭州日新教育咨询有限公司.ALL RIGHTS RESERVED</li>
+        <li>浙ICP备0000008号-1 网站设计与建设：杭州敬惜设计</li>
+    </ul>
 
+</div>
+</body>
+<script src="js/common.js"></script>
 <script>
     $('.focus').height($(window).height())
     $('.focus li').mChange({
@@ -225,17 +299,5 @@
         animates: function(idx) {} //自定义函数
     });
 </script>
-<div class="frouth">
-    <ul class="frou">
-        <li><strong>钱江学堂</strong></li>
-        <li>0571-85186096</li>
-        <li>杭州市上城区中豪·望江国际1号楼3楼</li><br/>
-        <li><strong>西溪学堂</strong></li>
-        <li>0571-87248006</li>
-        <li>杭州市西湖区西溪银泰3号楼北楼113-114</li><br/>
-        <li>COPYRIGHT©2018 杭州日新教育咨询有限公司.ALL RIGHTS RESERVED</li>
-        <li>浙ICP备0000008号-1 网站设计与建设：杭州敬惜设计</li>
-    </ul>
 
-</div>
 </html>
