@@ -1584,7 +1584,7 @@ body.welcomePage
     }
 
     .nav-con li:nth-child(1) a {
-        margin-left: -0.7rem;
+        margin-left: -0.5rem;
     }
 
     .nav-con li:nth-child(3) a,
@@ -1603,7 +1603,7 @@ body.welcomePage
     }
 
     .nav-con img {
-        height: 1.5rem;
+        height: 1.2rem;
         width: auto;
     }
 
@@ -2115,5 +2115,8 @@ body.welcomePage
         top: 30%;
         width: 0.6rem;
         z-index: 0;
+    }
+    .indexPage .sroll{
+        margin-top: 1.5rem;
     }
 }
