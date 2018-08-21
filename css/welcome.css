@@ -70,6 +70,7 @@ body.welcomePage
     height: 100%;
     margin: 0 auto;
 }
+
 .navBanner .navBanner-main .logo{
     width: 300px;
     display: inline-block;
@@ -1623,7 +1624,29 @@ body.welcomePage
         background-position: -37px -279px;
         background-size: 510%;
     }
-
+    .navBanner .weather{
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .navBanner .weather .weather-img img{
+        width: 0.8rem;
+        margin-top: 0.35rem;
+        margin-left: 0.15rem;
+    }
+    .navBanner .weather .weather-info{
+        padding: 0.38rem 0.1rem;
+    }
+    .navBanner .weather .weather-info .info{
+        font-size: 0.26rem;
+        color: #988678;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        width: 1.7rem;
+    }
     .courseIntroPage {
         background: #eadfd8;
     }
